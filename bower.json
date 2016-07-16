@@ -1,0 +1,17 @@
+{
+  "name": "site-setec-2016",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "felipebernardes <bernardes.flp@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/felipebernardes/site-setec-2016",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
