@@ -1,0 +1,49 @@
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    del = require('del'),
+    rename = require('gulp-rename'),
+    del = require('del'),
+    minifyCss = require('gulp-minify-css'),
+    autoprefixer = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync').create();
+
+
+gulp.task('dependencies', function() {
+  gulp.src('bower_components/normalize-css/normalize.css')
+  .pipe(rename('_normalize.scss'))
+  .pipe(gulp.dest('scss/libs'));
+});
+
+gulp.task('sass', function() {
+    gulp.src('scss/style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+        browsers: ['last 20 versions'],
+        cascade: false
+    }))
+    .pipe(gulp.dest('./dist/css/'))
+    .pipe(minifyCss())
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('./dist/css/'));
+});
+
+gulp.task('clean', function() {
+    del('dist/**/*');
+});
+
+gulp.task('dist', function() {
+  gulp.src(['index.html'])
+  .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('watch', function() {
+    browserSync.init({
+        server: "./dist"
+    });
+    gulp.watch('scss/**/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch('index.html', ['dist']).on('change', browserSync.reload);
+});
+
+gulp.task('default', ['clean', 'dependencies', 'sass'], function() {
+  gulp.start('dist');
+});
