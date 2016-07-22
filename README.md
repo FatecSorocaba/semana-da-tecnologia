@@ -6,7 +6,7 @@
 - gulp (-g)
 
 ## rodando o projeto
-1 - npm install
-2 - bower install
-3 - gulp
-4 - start coding!
+1. npm install  
+2. bower install  
+3. gulp  
+4. start coding!  
