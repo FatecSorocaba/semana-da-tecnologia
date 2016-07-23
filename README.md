@@ -14,3 +14,16 @@ Clique em cada item para saber como instalar:
 2. bower install
 3. gulp
 4. start coding!
+
+## Contribuindo
+
+Primeiramente faça um fork do projeto. Clone o repositório forkado e faça suas contribuições.
+
+### Commit messages
+
+Para cada alteração feita faça um commit
+
+Siga o padrão de mensagens abaixo para fazer commits:
+
+- **Include button styles**
+- **Add directory structure**
