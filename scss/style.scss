@@ -1,4 +1,39 @@
 //primary Sass file
-h1 {
-  color: pink;
+
+footer {
+  font-family: sans-serif, serif;
+  background-color: #000;
+  text-align: center;
+  height: 180px;
+  margin: 0px 200px;
+  padding-top:20px;
+  padding-bottom: 90px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #383636;
+  font-weight: bold;
+}
+
+footer h2,
+footer h3 {
+  color: #FFF;
+}
+
+
+footer div {
+  background-color: #FFF;
+  height: 50px;
+  margin-top: 120px;
+}
+
+.links-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.item-link-footer {
+  margin: 20px 60px;
 }
