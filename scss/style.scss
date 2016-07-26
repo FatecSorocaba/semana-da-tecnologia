@@ -13,10 +13,10 @@ footer {
   font-family: sans-serif, serif;
   background-color: #000;
   text-align: center;
-  height: 180px;
-  margin: 0px 200px;
-  padding-top:20px;
-  padding-bottom: 90px;
+  height: 145px;
+  margin: 0px 50px;
+  padding-top:50px;
+  padding-bottom: 120px;
 }
 
 footer a {
@@ -39,16 +39,35 @@ footer div {
 
 .links-footer {
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .item-link-footer {
-  margin: 20px 60px;
-
+  margin: 2px 60px;
 }
+
+@media (min-width:768px){
+  .links-footer{
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .item-link-footer {
+    margin: 20px 60px;
+  }
+
+  footer {
+    height: 180px;
+    margin: 0px 100px;
+    padding-top:20px;
+    padding-bottom: 90px;
+  }
+}
+
+
 .section-recuada {
-    color: #000; 
+    color: #000;
     margin: 30px auto;
     min-height: 80vh;
     text-align: center;
