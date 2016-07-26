@@ -1,4 +1,9 @@
 //primary Sass file
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
 h1 {
   color: red;
@@ -42,20 +47,10 @@ footer div {
   margin: 20px 60px;
 
 }
-.section-recuada{
-  color: #000;
-  margin: 20px 260px;
-  }
-  .google-maps{
+.section-recuada {
+    color: #000; 
+    margin: 30px auto;
+    min-height: 80vh;
     text-align: center;
-    height: 400px;
-    width: 700px;
-    border: 8px solid white;
-    box-shadow: 1px 1px 4px black;
-    }
+}
 
-    .google-maps img{
-      width: 100%;
-      height: 100%;
-
-    }
