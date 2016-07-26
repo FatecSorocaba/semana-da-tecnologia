@@ -5,9 +5,25 @@ html, body {
         padding: 0;
       }
 
-h1 {
-  color: red;
+
+/* section maps */
+
+
+.section-recuada {
+    color: #000;
+    margin: 30px auto;
+    min-height: 80vh;
+    text-align: center;
 }
+
+#map {
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+}
+
+
+/* footer */
 
 footer {
   font-family: sans-serif, serif;
@@ -63,18 +79,4 @@ footer div {
     padding-top:20px;
     padding-bottom: 90px;
   }
-}
-
-
-.section-recuada {
-    color: #000;
-    margin: 30px auto;
-    min-height: 80vh;
-    text-align: center;
-}
-
-#map {
-    height: 70vh;
-    width: 80vw;
-    margin: auto;
 }
