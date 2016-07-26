@@ -1,8 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    del = require('del'),
     rename = require('gulp-rename'),
-    del = require('del'),
     minifyCss = require('gulp-minify-css'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync').create();
@@ -21,24 +19,20 @@ gulp.task('sass', function() {
         browsers: ['last 20 versions'],
         cascade: false
     }))
-    .pipe(gulp.dest('./dist/css/'))
+    .pipe(gulp.dest('./css/'))
     .pipe(minifyCss())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('./dist/css/'));
-});
-
-gulp.task('clean', function() {
-    del('dist/**/*');
+    .pipe(gulp.dest('./css/'));
 });
 
 gulp.task('dist', function() {
   gulp.src(['index.html'])
-  .pipe(gulp.dest('./dist/'));
+  .pipe(gulp.dest('./'));
 });
 
 gulp.task('watch', function() {
     browserSync.init({
-        server: "./dist"
+        server: "./"
     });
     gulp.watch('scss/**/*.scss', ['sass']).on('change', browserSync.reload);
     gulp.watch('index.html', ['dist']).on('change', browserSync.reload);
