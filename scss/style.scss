@@ -1,14 +1,60 @@
 //primary Sass file
+
 h1 {
   color: red;
 }
+
+footer {
+  font-family: sans-serif, serif;
+  background-color: #000;
+  text-align: center;
+  height: 180px;
+  margin: 0px 200px;
+  padding-top:20px;
+  padding-bottom: 90px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #383636;
+  font-weight: bold;
+}
+
+footer h2,
+footer h3 {
+  color: #FFF;
+}
+
+
+footer div {
+  background-color: #FFF;
+  height: 50px;
+  margin-top: 120px;
+}
+
+.links-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.item-link-footer {
+  margin: 20px 60px;
+
+}
 .section-recuada{
   color: #000;
-  margin: 0px 40px;
+  margin: 20px 260px;
   }
   .google-maps{
-    margin: 0px 40px;
-    border: 5px solid rgb(0,0,0,.5);
+    height: 400px;
+    width: 700px;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    }
 
+    .google-maps img{
+      width: 100%;
+      height: 100%;
 
     }
