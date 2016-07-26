@@ -10,14 +10,10 @@
 
 
   
-
     <section class="section-recuada">
-
-      <h2>Localização</h2>
-      <div class="google-maps">
-          <img src="http://www.fatecsorocaba.edu.br/imagens/mapa_01.jpg" alt="Mapa Fatec" />
-      </div>
-    </section>
+        <h2>Localização</h2>
+        <div id="map"></div>
+    </section> 
 
     <footer>
       <h2>Contato</h2>
@@ -26,7 +22,37 @@
           <a href="#" class="item-link-footer">cc setec</a>
           <a href="#" class="item-link-footer">Fatec Sorocaba</a>
       </div>
-    </footer>
+    </footer> 
+    <script>
+        function initMap() {
+            var myLatlng = {lat: -23.482069, lng: -47.425131};
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: myLatlng
+        });
+            
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Click to zoom'
+        });
 
+          map.addListener('center_changed', function() {
+            // 3 seconds after the center of the map has changed, pan back to the
+            // marker.
+            window.setTimeout(function() {
+              map.panTo(marker.getPosition());
+            }, 3000);
+          });
+
+          marker.addListener('click', function() {
+            map.setZoom(8);
+            map.setCenter(marker.getPosition());
+          });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPGdaE7UwSEinw0ck25l_gcXCva0Wg9uw&signed_in=true&callback=initMap" async defer>
+    </script>
   </body>
 </html>
