@@ -1,4 +1,8 @@
 //primary Sass file
-h1 {
-  color: pink;
-}
+
+@import "modules/functions";
+@import "modules/mixins";
+@import "modules/breakpoints";
+@import "modules/variables";
+
+@import "partials/general";
