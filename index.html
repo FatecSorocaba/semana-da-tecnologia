@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>SETEC 2016</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <script type="text/javascript" src="js/functions.js"></script>
   </head>
-  <body>
+  <body onload="openCourse('ADS')">
       <section class="container">
           <h2>Agenda</h2>
            <ul class="tab-list">
-               <li id="ads" class="ads" onclick="openCourse('cronoADS')">ADS</li>
-               <li id="fac" class="fab"><a href="#" onclick="openCourse('cronoFAB')">FAB</a></li>
-               <li id="sis" class="sis"><a href="#" onclick="openCourse('cronoSIS')">SIS</a></li>
+               <li class="ads"><a href="#" onclick="openCourse('ADS')">ADS</a></li>
+               <li class="fab"><a href="#" onclick="openCourse('FAB')">FAB</a></li>
+               <li class="sis"><a href="#" onclick="openCourse('SIS')">SIS</a></li>
            </ul>
-           <div class="schedule">
+           <div id="ADS" class="schedule">
              <div class="timeline-container">
                <h3>Segunda - 00/00</h3>
                <ul class="timeline-item">
@@ -55,27 +56,90 @@
                </ul>
              </div>
            </div>
-           <div id="cronoADS" class="none ads">
-               <h3>Titulo1</h3>
-               <h4>some lorem</h4>
+           <div id="FAB" class="schedule">
+             <div class="timeline-container">
+               <h3>foi em monstro - 00/00</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
            </div>
-           <div id="cronoFAB" class="none fab">
-               <h3>Titulo2</h3>
-               <h4>more lorem</h4>
-           </div>
-           <div id="cronoSIS" class="none sis">
-               <h3>Titulo3</h3>
-               <h4>wait! more lorem</h4>
+           <div id="SIS" class="schedule">
+             <div class="timeline-container">
+               <h3>saiu da jaula - 00/00</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
            </div>
        </section>
   </body>
-  <script>
-        function openCourse(cityName) {
-            var i, x = document.getElementsByClassName("tab");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            document.getElementById(cityName).style.display = "calendar-body-style";
-        }
-  </script>
 </html>
