@@ -9,7 +9,7 @@
         width: 25%;
         text-align: center;
         padding: 26px 0;
-        @include border-radius(10%);
+        @include border-radius(10 10 0 0);
     }
 }
 
