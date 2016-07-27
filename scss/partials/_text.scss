@@ -1,10 +1,34 @@
 //typography
 @import 'typography';
 
-//headings
-
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+//headings
+
+h1 {
+  font-size: rem(36px);
+}
+
+h2 {
+  font-size: rem(32px);
+}
+
+h3 {
+  font-size: rem(28px);
+}
+
+h4 {
+  font-size: rem(24px);
+}
+
+h5 {
+  font-size: rem(20px);
+}
+
+h6 {
+  font-size: rem(18px);
 }
 
 //paragraph
