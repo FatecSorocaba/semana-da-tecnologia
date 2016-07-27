@@ -6,7 +6,33 @@
     <link rel="stylesheet" href="/css/style.min.css">
   </head>
   <body>
-    <h1>oi,a gaabriel</h1>
-    <h2>taaaaaaaeste</h2>
+      <section>
+           <ul class="tab-list">
+               <li id="ads" class="tab ads" onclick="openCourse('cronoADS')">ADS</li>
+               <li id="fac" class="tab fab"><a href="#" onclick="openCourse('cronoFAB')">FAB</a></li>
+               <li id="sis" class="tab sis"><a href="#" onclick="openCourse('cronoSIS')">SIS</a></li>
+           </ul>
+           <div id="cronoADS" class="none ads">
+               <h3>Titulo1</h3>
+               <h4>some lorem</h4>
+           </div>
+           <div id="cronoFAB" class="none fab">
+               <h3>Titulo2</h3>
+               <h4>more lorem</h4>
+           </div>
+           <div id="cronoSIS" class="none sis">
+               <h3>Titulo3</h3>
+               <h4>wait! more lorem</h4>
+           </div>
+       </section>
   </body>
+  <script>
+        function openCourse(cityName) {
+            var i, x = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "calendar-body-style";
+        }
+  </script>
 </html>
