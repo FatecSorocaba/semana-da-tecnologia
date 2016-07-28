@@ -1,9 +1,48 @@
 //typography
+@import 'typography';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
 //headings
 
+h1 {
+  font-size: rem(48px);
+}
+
+h2 {
+  font-size: rem(42px);
+}
+
+h3 {
+  font-size: rem(28px);
+}
+
+h4 {
+  font-size: rem(24px);
+}
+
+h5 {
+  font-size: rem(22px);
+}
+
+h6 {
+  font-size: rem(20px);
+}
 
 //paragraph
 
+p {
+  font-size: rem(20px);
+  line-height: rem(24px);
+  margin: 10px 0;
+}
+
+//list-itens
+
+li {
+  font-size: rem(28px);
+}
 
 //inline elements
