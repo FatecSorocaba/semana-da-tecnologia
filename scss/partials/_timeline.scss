@@ -1,35 +1,47 @@
-.tab-list{
+.tab-list {
     background: #C2C2C2;
     align-items: stretch;
     display: inline-flex;
-    list-style-type: none;
-}
-.tab{
-    height: 60px;
-    width: 120px;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    text-align: center;
+    width: 100%;
+    margin: 30px 0;
+
+    li {
+        width: 25%;
+        text-align: center;
+        padding: 26px 0;
+        @include border-radius(10%);
+    }
 }
 
-.calendar-body-style{
-    font-style: italic;
-    font-size: 40px;
-    display: inherit;
+.timeline-container {
+    margin: 20px 0;
 }
 
-.none{
+.timeline-item {
+    margin: 20px 0;
+
+    li {
+      margin: 20px 0;
+      display: flex;
+    }
+
+    span {
+      margin-right: 30px;
+    }
+}
+
+.none {
     display: none;
 }
 
-.ads{
+.ads {
     background: #4b38c2;
 }
 
-.fab{
+.fab {
     background: #32833c;
 }
 
-.sis{
+.sis {
     background: #8c2154;
 }
