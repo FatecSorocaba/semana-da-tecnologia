@@ -2,23 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title>SETEC 2016</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
-
-    <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPGdaE7UwSEinw0ck25l_gcXCva0Wg9uw&signed_in=true&callback=initMap" async defer>
-    </script>
+  <body onload="openCourse('ADS')">
       <section class="container">
           <h2>Agenda</h2>
            <ul class="tab-list">
-               <li id="ads" class="ads"><a href="#" onclick="openCourse('cronoADS')">ADS</a></li>
-               <li id="fac" class="fab"><a href="#" onclick="openCourse('cronoFAB')">FAB</a></li>
-               <li id="sis" class="sis"><a href="#" onclick="openCourse('cronoSIS')">SIS</a></li>
+               <li class="ads"><a href="#" onclick="openCourse('ADS')">ADS</a></li>
+               <li class="fab"><a href="#" onclick="openCourse('FAB')">FAB</a></li>
+               <li class="sis"><a href="#" onclick="openCourse('SIS')">SIS</a></li>
            </ul>
-           <div class="schedule">
+           <div id="ADS" class="schedule">
              <div class="timeline-container">
                <h3>Segunda - 00/00</h3>
                <ul class="timeline-item">
@@ -60,17 +56,89 @@
                </ul>
              </div>
            </div>
-           <div id="cronoADS" class="none ads">
-               <h3>Titulo1</h3>
-               <h4>some lorem</h4>
+           <div id="FAB" class="schedule">
+             <div class="timeline-container">
+               <h3>foi em monstro - 00/00</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
            </div>
-           <div id="cronoFAB" class="none fab">
-               <h3>Titulo2</h3>
-               <h4>more lorem</h4>
-           </div>
-           <div id="cronoSIS" class="none sis">
-               <h3>Titulo3</h3>
-               <h4>wait! more lorem</h4>
+           <div id="SIS" class="schedule">
+             <div class="timeline-container">
+               <h3>saiu da jaula - 00/00</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
            </div>
        </section>
 
@@ -87,5 +155,9 @@
              <a href="#" class="link-footer">Fatec Sorocaba</a>
          </div>
        </footer>
+
+       <script type="text/javascript" src="js/main.js"></script>
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPGdaE7UwSEinw0ck25l_gcXCva0Wg9uw&signed_in=true&callback=initMap" async defer>
+       </script>
   </body>
 </html>
