@@ -7,19 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <section class="container">
-        <h2>Localização</h2>
-        <div id="map"></div>
-    </section>
 
-    <footer>
-      <h2>Contato</h2>
-      <h3>setec@gmail.com</h3>
-      <div>
-          <a href="#" class="link-footer">cc setec</a>
-          <a href="#" class="link-footer">Fatec Sorocaba</a>
-      </div>
-    </footer>
     <script src="js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPGdaE7UwSEinw0ck25l_gcXCva0Wg9uw&signed_in=true&callback=initMap" async defer>
     </script>
@@ -85,14 +73,19 @@
                <h4>wait! more lorem</h4>
            </div>
        </section>
+
+       <section class="container">
+           <h2>Localização</h2>
+           <div id="map"></div>
+       </section>
+
+       <footer>
+         <h2>Contato</h2>
+         <h3>setec@gmail.com</h3>
+         <div>
+             <a href="#" class="link-footer">cc setec</a>
+             <a href="#" class="link-footer">Fatec Sorocaba</a>
+         </div>
+       </footer>
   </body>
-  <script>
-        function openCourse(cityName) {
-            var i, x = document.getElementsByClassName("tab");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            document.getElementById(cityName).style.display = "calendar-body-style";
-        }
-  </script>
 </html>
