@@ -30,7 +30,7 @@ footer {
   background-color: #000;
   text-align: center;
   height: 145px;
-  margin: 0px 50px;
+  margin: 0px 5vh;
   padding-top:50px;
   padding-bottom: 120px;
 }
@@ -50,16 +50,14 @@ footer h3 {
 footer div {
   background-color: #FFF;
   height: 50px;
-  margin-top: 120px;
-}
-
-.links-footer {
+  margin-top: 114px;
   display: flex;
   flex-flow: column;
   justify-content: center;
+
 }
 
-.item-link-footer {
+.link-footer {
   margin: 2px 60px;
 }
 

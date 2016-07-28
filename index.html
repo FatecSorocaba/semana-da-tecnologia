@@ -9,20 +9,20 @@
   <body>
 
 
-  
+
     <section class="section-recuada">
         <h2>Localização</h2>
         <div id="map"></div>
-    </section> 
+    </section>
 
     <footer>
       <h2>Contato</h2>
       <h3>setec@gmail.com</h3>
-      <div class="links-footer">
-          <a href="#" class="item-link-footer">cc setec</a>
-          <a href="#" class="item-link-footer">Fatec Sorocaba</a>
+      <div>
+          <a href="#" class="link-footer">cc setec</a>
+          <a href="#" class="link-footer">Fatec Sorocaba</a>
       </div>
-    </footer> 
+    </footer>
     <script>
         function initMap() {
             var myLatlng = {lat: -23.482069, lng: -47.425131};
@@ -30,7 +30,7 @@
             zoom: 15,
             center: myLatlng
         });
-            
+
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
