@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title>SETEC 2016</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body onload="openCourse('ADS')">
       <section class="container">
@@ -141,5 +141,23 @@
              </div>
            </div>
        </section>
+
+       <section class="container">
+           <h2>Localização</h2>
+           <div id="map"></div>
+       </section>
+
+       <footer>
+         <h2>Contato</h2>
+         <h3>setec@gmail.com</h3>
+         <div>
+             <a href="#" class="link-footer">cc setec</a>
+             <a href="#" class="link-footer">Fatec Sorocaba</a>
+         </div>
+       </footer>
+
+       <script type="text/javascript" src="js/main.js"></script>
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPGdaE7UwSEinw0ck25l_gcXCva0Wg9uw&signed_in=true&callback=initMap" async defer>
+       </script>
   </body>
 </html>
