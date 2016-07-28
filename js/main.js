@@ -1,3 +1,12 @@
+function openCourse(Course) {
+    var i, x;
+    x = document.getElementsByClassName("schedule");
+    for(i=0;i<x.length;i++){
+        x[i].style.display = 'none';
+    }
+    document.getElementById(Course).style.display = "block";
+}
+
 function initMap() {
     var myLatlng = {lat: -23.482069, lng: -47.425131};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -23,12 +32,4 @@ var marker = new google.maps.Marker({
     map.setZoom(8);
     map.setCenter(marker.getPosition());
   });
-
-function openCourse(Course) {
-    var i, x;
-    x = document.getElementsByClassName("schedule");
-    for(i=0;i<x.length;i++){
-        x[i].style.display = 'none';
-    }
-    document.getElementById(Course).style.display = "block";
 }
