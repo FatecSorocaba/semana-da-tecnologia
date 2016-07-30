@@ -1,4 +1,7 @@
 # site-setec-2016
+Esse é o site da Semana da Tecnologia de 2016! :D
+![codando](https://media.giphy.com/media/ZvLUtG6BZkBi0/giphy.gif)
+
 
 ## Dependências
 
