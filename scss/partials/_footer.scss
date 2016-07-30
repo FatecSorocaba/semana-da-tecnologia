@@ -2,9 +2,9 @@
     font-family: sans-serif, serif;
     background-color: #000;
     text-align: center;
-    height: 145px;
-    margin: 0px 5vh;
-    padding-top:50px;
+    max-height: 270px;
+    margin: 0px 2vh;
+    padding-top: 50px;
     padding-bottom: 120px;
   }
 
@@ -23,7 +23,7 @@
   footer div {
     background-color: #FFF;
     height: 50px;
-    margin-top: 114px;
+    margin-top: 80px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -31,7 +31,8 @@
   }
 
   .link-footer {
-    margin: 2px 60px;
+    padding: 2px 0px;
+    margin: 5px 60px;
   }
 
 
@@ -44,7 +45,7 @@
 
   .link-footer {
     @include tablet {
-      margin: 20px 60px;
+      margin: 15px 160px;
     }
   }
 
