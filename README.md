@@ -27,3 +27,6 @@ Siga o padrão de mensagens abaixo para fazer commits:
 
 - **Include button styles**
 - **Add directory structure**
+
+### Protótipo
+- ![protótipo do site](http://i.imgur.com/fVMF9NB.jpg)
