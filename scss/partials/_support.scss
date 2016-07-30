@@ -1,0 +1,14 @@
+.support {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	li {
+		width: 20%;
+		margin: 30px 16px;
+		
+		img {
+			max-width: 100%;
+		}
+	}
+}
