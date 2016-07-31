@@ -1,4 +1,7 @@
 # site-setec-2016
+Esse é o site da Semana da Tecnologia de 2016! :D    
+![codando](https://media.giphy.com/media/ZvLUtG6BZkBi0/giphy.gif)
+
 
 ## Dependências
 
@@ -27,3 +30,6 @@ Siga o padrão de mensagens abaixo para fazer commits:
 
 - **Include button styles**
 - **Add directory structure**
+
+### Protótipo
+- ![protótipo do site](http://i.imgur.com/fVMF9NB.jpg)
