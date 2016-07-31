@@ -65,12 +65,15 @@
       content: ' ';
       width: 5px;
       height: 100%;
-      background: #aaa; 
+      background: #aaa;
       position: absolute;
       left: 123px;
     }
 }
 
+.schedule {
+    display: none;
+}
 .area-commitao {
 
   padding: 10px;
