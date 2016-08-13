@@ -1,0 +1,18 @@
+.collection {
+  min-height: 10vh;
+  display: flex;
+  background-color: #555;
+  flex-flow: column;
+  text-align: center;
+  color: #fff;
+
+  h2 {
+    margin: auto auto 2rem auto;
+    font-size: 1.4rem;
+  }
+
+  p {
+    margin: 0 auto auto auto;
+    font-size: 1rem;
+  }
+}
