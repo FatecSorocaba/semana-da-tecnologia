@@ -6,6 +6,10 @@ header {
   min-height: 100vh;
   display: flex;
   flex-flow: column;
+  background-image: url("../img/bg-header.jpg");
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
 }
 
 header h1 {
