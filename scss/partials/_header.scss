@@ -28,18 +28,17 @@ header::before {
 header h1 {
   font-size: 1.8rem;
   padding: 48px 12px 0px 12px;
-  margin: auto;
+  margin: auto auto 2rem auto;
 }
 
 header h2 {
   font-size: 1.3rem;
   padding-top: 24px;
-  margin: auto;
-  margin-top: 0;
+  margin: 2rem auto auto auto;
 }
 
 header p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-align: right;
-  padding: 16px 12px 8px 0;
+  padding: 16px 2rem 2rem 0;
 }
