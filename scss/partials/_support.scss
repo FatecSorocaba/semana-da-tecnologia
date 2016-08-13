@@ -1,12 +1,27 @@
 .support {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	h2 {
+		margin-bottom: 2rem;
+	}
+
+
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 auto;
+		justify-content: center;
+		max-width: 900px;
+	}
 
 	li {
+		min-width: 200px;
 		width: 20%;
-		margin: 30px 16px;
-		
+		margin: auto;
+		padding: 1rem;
+
+		@include desktop {
+			margin: 1rem;
+		}
+
 		img {
 			max-width: 100%;
 		}
