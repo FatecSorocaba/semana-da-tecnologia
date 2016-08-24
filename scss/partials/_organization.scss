@@ -3,10 +3,12 @@
 
 .organization {
 	background-color: #ccc;
-	text-align: center;
 	width: 100%;
 	padding: 2rem 0;
-
+	p {
+		padding-top: 20px;
+		text-align: center;
+	}
 	a {
 		margin: 1rem auto auto auto;
 		display: block;
