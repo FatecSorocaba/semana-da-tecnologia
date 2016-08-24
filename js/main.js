@@ -4,7 +4,7 @@ function openCourse(Course) {
     for(i=0;i<allTabs.length;i++){
         allTabs[i].style.display = 'none';
     }
-    document.getElementById(Course).style.display = "block";
+    document.getElementById(  Course).style.display = "block";
 }
 
 function initMap() {
