@@ -1,7 +1,7 @@
   footer {
     background-color: #000;
     text-align: center;
-    min-height: 40vh;
+    min-height: 230px;
     color: #FFF;
 
     h2 {
@@ -15,9 +15,13 @@
     }
 
     div {
-      margin-top: 40px;
-      padding-bottom: 6px;
+      margin-top: 50px;
       background-color: #FFF;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: column;
     }
 
     a {
@@ -26,26 +30,15 @@
     }
   }
 
-
   footer div{
     @include tablet {
+      margin-top: 80px;
+    }
+  }
+
+  footer ul {
+    @include tablet {
       flex-flow: row;
-      justify-content: space-between;
-    }
-
-
-  .link-footer {
-    @include tablet {
-      margin: 15px 160px;
+      justify-content: space-around;
     }
   }
-
-  footer {
-    @include tablet {
-      height: 180px;
-      margin: 0px 100px;
-      padding-top:20px;
-      padding-bottom: 90px;
-    }
-  }
-}
