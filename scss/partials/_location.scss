@@ -1,6 +1,12 @@
 
-#map {
-    height: 70vh;
+.location {
+  min-height: 100vh;
+  padding-left: 11px;
+
+  #map {
+    margin-top: 20px;
+    height: 80vh;
     width: 80vw;
-    margin: auto;
+  }
+
 }
