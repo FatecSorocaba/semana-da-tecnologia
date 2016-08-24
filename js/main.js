@@ -4,14 +4,15 @@ function openCourse(Course) {
     for(i=0;i<allTabs.length;i++){
         allTabs[i].style.display = 'none';
     }
-    document.getElementById(Course).style.display = "block";
+    document.getElementById(  Course).style.display = "block";
 }
 
 function initMap() {
     var myLatlng = {lat: -23.482069, lng: -47.425131};
     var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
-    center: myLatlng
+    center: myLatlng,
+	scrollwheel: false,
 });
 
 var marker = new google.maps.Marker({
