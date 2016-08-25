@@ -7,6 +7,10 @@
     margin-top: 20px;
     height: 80vh;
     width: 80vw;
+
+    @include desktop {
+      width: 90vw;
+    }
   }
 
 }
