@@ -23,18 +23,21 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body onload="openCourse('ADS')">
+  <body>
       <header>
-          <h1>Semana da Tecnologia 2016</h1>
+          <h1>XV Semana da Tecnologia</h1>
           <h2>de 03 a 08 de outubro na Fatec Sorocaba</h2>
-          <p>entrada gratuita</p>
+          <p class="corner">entrada gratuita</p>
       </header>
       <section class="container">
           <h2>Agenda</h2>
            <ul class="tab-list">
-               <li class="ads"><a href="#" onclick="openCourse('ADS'); return false;">ADS</a></li>
-               <li class="fab"><a href="#" onclick="openCourse('FAB'); return false;">FAB</a></li>
-               <li class="sis"><a href="#" onclick="openCourse('SIS'); return false;">SIS</a></li>
+               <li class="active"><a href="#" onclick="openCourse('seg'); return false;">seg</a></li>
+               <li><a href="#" onclick="openCourse('ter'); return false;">ter</a></li>
+               <li><a href="#" onclick="openCourse('qua'); return false;">qua</a></li>
+               <li><a href="#" onclick="openCourse('qui'); return false;">qui</a></li>
+               <li><a href="#" onclick="openCourse('sex'); return false;">sex</a></li>
+               <li><a href="#" onclick="openCourse('sab'); return false;">sab</a></li>
            </ul>
            <div id="ADS" class="schedule ads">
              <div class="timeline-container">
@@ -76,12 +79,6 @@
                    </div>
                  </li>
                </ul>
-               <div class="area-commitao">
-                 <div>
-                  <h2>Comittão</h2>
-                  <p>Mais informações em breve!</p>
-                 </div>
-               </div>
              </div>
            </div>
            <div id="FAB" class="schedule fab">
@@ -129,43 +126,12 @@
            <div id="SIS" class="schedule sis">
              <div class="timeline-container">
                <h3>saiu da jaula - 00/00</h3>
-               <ul class="timeline-item">
-                 <li>
-                   <span>09:00</span>
-                   <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
-                   </div>
-                 </li>
-                 <li>
-                   <span>09:00</span>
-                   <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
-                   </div>
-                 </li>
-                 <li>
-                   <span>09:00</span>
-                   <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
-                   </div>
-                 </li>
-                 <li>
-                   <span>09:00</span>
-                   <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
-                   </div>
-                 </li>
-                 <li>
-                   <span>09:00</span>
-                   <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
-                   </div>
-                 </li>
-               </ul>
+               <div class="area-commitao">
+                 <div>
+                  <h2>Comittão</h2>
+                  <p>Mais informações em breve!</p>
+                 </div>
+               </div>
              </div>
            </div>
        </section>
