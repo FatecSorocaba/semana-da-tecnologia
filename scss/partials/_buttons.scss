@@ -3,6 +3,6 @@
 .btn {
 	@include border-radius(10px);
 	padding: 10px 20px;
-	background-color: #a9cb02;
+	background-color: rgba(169,203,2, 0.9);
 	text-transform: uppercase;
 }
