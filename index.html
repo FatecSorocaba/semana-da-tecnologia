@@ -32,14 +32,14 @@
       <section class="container">
           <h2>Agenda</h2>
            <ul class="tab-list">
-               <li class="active"><a href="#" onclick="openCourse('seg'); return false;">seg</a></li>
-               <li><a href="#" onclick="openCourse('ter'); return false;">ter</a></li>
-               <li><a href="#" onclick="openCourse('qua'); return false;">qua</a></li>
-               <li><a href="#" onclick="openCourse('qui'); return false;">qui</a></li>
-               <li><a href="#" onclick="openCourse('sex'); return false;">sex</a></li>
-               <li><a href="#" onclick="openCourse('sab'); return false;">sab</a></li>
+               <li class="tab active" onclick="openCourse(this, 'seg');"><a href="javascript:void(0)">seg</a></li>
+               <li class="tab" onclick="openCourse(this, 'ter');"><a href="javascript:void(0)">ter</a></li>
+               <li class="tab" onclick="openCourse(this, 'qua');"><a href="javascript:void(0)">qua</a></li>
+               <li class="tab" onclick="openCourse(this, 'qui');"><a href="javascript:void(0)">qui</a></li>
+               <li class="tab" onclick="openCourse(this, 'sex');"><a href="javascript:void(0)">sex</a></li>
+               <li class="tab" onclick="openCourse(this, 'sab');"><a href="javascript:void(0)">sab</a></li>
            </ul>
-           <div id="ADS" class="schedule ads">
+           <div id="seg" class="schedule" style="display: block">
              <div class="timeline-container">
                <h3>Segunda - 00/00</h3>
                <ul class="timeline-item">
@@ -81,7 +81,7 @@
                </ul>
              </div>
            </div>
-           <div id="FAB" class="schedule fab">
+           <div id="ter" class="schedule">
              <div class="timeline-container">
                <h3>foi em monstro - 00/00</h3>
                <ul class="timeline-item">
@@ -123,7 +123,133 @@
                </ul>
              </div>
            </div>
-           <div id="SIS" class="schedule sis">
+           <div id="qua" class="schedule">
+             <div class="timeline-container">
+               <h3>foi em monstro - 00/00</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div id="qui" class="schedule">
+             <div class="timeline-container">
+               <h3>foi em monstro - 00/00</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div id="sex" class="schedule">
+             <div class="timeline-container">
+               <h3>foi em monstro - 00/00</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00</span>
+                   <div>
+                     <strong>Título da palestra</strong>
+                     <p>Nome do palestrante</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div id="sab" class="schedule">
              <div class="timeline-container">
                <h3>saiu da jaula - 00/00</h3>
                <div class="area-commitao">
