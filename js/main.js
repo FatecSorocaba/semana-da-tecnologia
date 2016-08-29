@@ -4,7 +4,7 @@ function openCourse(item, day) {
     for(var i=0;i<allPanels.length;i++){
         allPanels[i].style.display = 'none';
     }
-    
+
     item.className = "active";
     document.getElementById(day).style.display = 'block';
 }
