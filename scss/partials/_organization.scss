@@ -2,20 +2,27 @@
 @import 'buttons';
 
 .organization {
-	background-color: #ccc;
+	background-color: #7a369d;
 	width: 100%;
 	padding: 2rem 0;
+	text-align: center;
+
+	h2 {
+		color: #fff;
+	}
+
 	p {
 		padding-top: 20px;
-		text-align: center;
+		color: #fff;
 	}
+
 	a {
 		margin: 1.2rem auto auto auto;
 		display: block;
 		max-width: 150px;
-		color: #222;
+		color: #fff;
 		&:visited {
-			color: #222;
+			color: #fff;
 		}
 	}
 }

@@ -1,10 +1,12 @@
-function openCourse(Course) {
-    var i, allTabs;
-    allTabs = document.getElementsByClassName("schedule");
-    for(i=0;i<allTabs.length;i++){
-        allTabs[i].style.display = 'none';
+function openCourse(item, day) {
+    var allPanels = document.getElementsByClassName("schedule");
+
+    for(var i=0;i<allPanels.length;i++){
+        allPanels[i].style.display = 'none';
     }
-    document.getElementById(  Course).style.display = "block";
+    
+    item.className = "active";
+    document.getElementById(day).style.display = 'block';
 }
 
 function initMap() {
