@@ -3,24 +3,16 @@
 		margin-bottom: 2rem;
 	}
 
-
 	ul {
 		display: flex;
 		flex-flow: row wrap;
 		margin: 0 auto;
-		justify-content: center;
-		max-width: 900px;
+		justify-content: space-between;
 	}
 
 	li {
-		min-width: 200px;
-		width: 20%;
-		margin: auto;
-		padding: 1rem;
-
-		@include desktop {
-			margin: 1rem;
-		}
+		width: 26%;
+		margin: 48px 0;
 
 		img {
 			max-width: 100%;

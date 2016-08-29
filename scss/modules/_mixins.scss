@@ -11,3 +11,11 @@
   -moz-border-radius:    $radius;
   border-radius:         $radius;
 }
+
+@mixin transform($transformer) {
+  transform: $transformer;
+  -ms-transform: $transformer;
+  -moz-transform: $transformer;
+  -o-transform: $transformer;
+  -webkit-transform: $transformer;
+}
