@@ -1,7 +1,7 @@
 .collection {
   min-height: 10vh;
   display: flex;
-  background-color: #555;
+  background-color: #a9cb02;
   flex-flow: column;
   text-align: center;
   color: #fff;
@@ -9,6 +9,7 @@
   h2 {
     margin: auto auto 2rem auto;
     font-size: 1.4rem;
+    color: #fff;
   }
 
   p {
