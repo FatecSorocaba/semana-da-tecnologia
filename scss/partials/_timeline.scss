@@ -12,6 +12,7 @@
         @include border-radius(10% 10% 0 0);
 
         a {
+          color: #7a369d;
           padding: 26px 0;
           display: block;
         }
@@ -20,6 +21,9 @@
     .active {
       border: solid 1px #ccc;
       border-bottom-color: #fff;
+      a {
+        color: #A9CB02;        
+      }
     }
 }
 
