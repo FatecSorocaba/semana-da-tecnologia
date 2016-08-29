@@ -3,10 +3,12 @@
     display: inline-flex;
     width: 100%;
     margin: 30px 0 0 0;
+    border-bottom: solid 1px #ccc;
 
     li {
         width: 25%;
         text-align: center;
+        margin-bottom: -1px;
         @include border-radius(10% 10% 0 0);
 
         a {
@@ -14,11 +16,15 @@
           display: block;
         }
     }
+
+    .active {
+      border: solid 1px #ccc;
+      border-bottom-color: #fff;
+    }
 }
 
 .timeline-container {
-    margin: 0 0;
-    padding-left: 3rem;
+    margin: 0;
 
     h3 {
       text-transform: uppercase;
@@ -39,19 +45,33 @@
         content: ' ';
         width: 18px;
         height: 18px;
-        left: 116px;
-        top: 21px;
+        left: 77px;
+        top: 35%;
         position: absolute;
-        background: #000;
+        background: #732d9d;
         @include border-radius(50%);
+
+        @include landscape {
+          top: 39%;
+        }
+
+        @include tablet {
+          left: 116px;
+          top: 39%;
+        }
       }
     }
 
     span {
-      margin-right: 70px;
+      margin-right: 60px;
       display: flex;
       align-items: center;
-      font-size: rem(30px);
+      font-size: rem(20px);
+
+      @include tablet {
+        margin-right: 90px;
+        font-size: rem(30px);
+      }
     }
 
     strong {
@@ -66,15 +86,20 @@
       content: ' ';
       width: 5px;
       height: 100%;
-      background: #aaa;
+      background: #ace701;
       position: absolute;
-      left: 123px;
+      left: 84px;
+
+      @include tablet {
+        left: 123px;
+      }
     }
 }
 
 .schedule {
-    display: none;
+  display: none;
 }
+
 .area-commitao {
 
   div {
@@ -96,16 +121,4 @@
 
 .none {
     display: none;
-}
-
-.ads {
-    background: #4b38c2;
-}
-
-.fab {
-    background: #32833c;
-}
-
-.sis {
-    background: #8c2154;
 }
