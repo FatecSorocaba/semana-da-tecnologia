@@ -12,7 +12,7 @@
         @include border-radius(10% 10% 0 0);
 
         a {
-          color: #7a369d;
+          color: lighten(#7a369d, 20%);
           padding: 26px 0;
           display: block;
         }
@@ -22,7 +22,7 @@
       border: solid 1px #ccc;
       border-bottom-color: #fff;
       a {
-        color: #A9CB02;        
+        color: #7a369d;
       }
     }
 }
@@ -71,6 +71,7 @@
       display: flex;
       align-items: center;
       font-size: rem(20px);
+      font-family: monospace;
 
       @include tablet {
         margin-right: 90px;

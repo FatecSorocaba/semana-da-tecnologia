@@ -1,48 +1,13 @@
   footer {
-    background-color: #7a369d;
+    background-color: #fff;
     text-align: center;
-    min-height: 230px;
-    color: #FFF;
+    color: #7a369d;
+    display: flex;
+    flex-flow: column;
+    padding: 1vh 2.5vw;
 
-    h2 {
-      font-size: 2rem;
-      padding-top: 30px;
-      padding-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.3rem;
-    }
-
-    div {
-      margin-top: 50px;
-      background-color: #FFF;
-
-      a {
-        color: #7a369d;
-      }
-    }
-
-    ul {
-      display: flex;
-      flex-flow: column;
-    }
-
-    a {
-      color: #000;
-      font-size: 0.9rem;
-    }
-  }
-
-  footer div{
-    @include tablet {
-      margin-top: 80px;
-    }
-  }
-
-  footer ul {
-    @include tablet {
+    @media (min-width: 768px) {
       flex-flow: row;
-      justify-content: space-around;
+      justify-content: space-between;
     }
   }

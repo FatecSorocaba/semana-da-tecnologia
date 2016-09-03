@@ -6,13 +6,14 @@
 @import "modules/variables";
 
 @import "partials/general";
-
-@import "partials/text";
 @import "partials/section";
-@import "partials/timeline";
-@import "partials/location";
-@import "partials/footer";
+@import "partials/text";
+
 @import "partials/header";
+@import "partials/timeline";
+@import "partials/collection";
 @import "partials/support";
 @import "partials/organization";
-@import "partials/collection";
+@import "partials/location";
+@import "partials/contact";
+@import "partials/footer";
