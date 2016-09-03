@@ -1,7 +1,7 @@
 .contact {
   background-color: #7a369d;
   text-align: center;
-  min-height: 230px;
+  min-height: 190px;
   color: #FFF;
 
   h2 {
@@ -32,18 +32,5 @@
   a {
     color: #000;
     font-size: 0.9rem;
-  }
-}
-
-footer div{
-  @include tablet {
-    margin-top: 80px;
-  }
-}
-
-footer ul {
-  @include tablet {
-    flex-flow: row;
-    justify-content: space-around;
   }
 }
