@@ -3,9 +3,9 @@ var allPanels = document.querySelectorAll(".schedule");
 
 function activateTab(tab) {
   //remove active de todas as outras tabs
-  tabs.forEach(function(tab) {
-    tab.classList.remove('active');
-  });
+  for (i = 0; i < tabs.length; ++i) {
+    tabs[i].classList.remove('active');
+  }
   //adiciona active em t
   tab.classList.add('active');
 }
