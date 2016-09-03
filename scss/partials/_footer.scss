@@ -1,4 +1,4 @@
-  footer {
+footer {
     background-color: #fff;
     text-align: center;
     color: #7a369d;
@@ -9,5 +9,25 @@
     @media (min-width: 768px) {
       flex-flow: row;
       justify-content: space-between;
+    }
+
+    ul {
+      @include tablet {
+        flex-flow: row;
+        justify-content: space-around;
+      }
+    }
+
+    div {
+      @include tablet {
+        margin-top: 80px;
+      }
+    }
+
+    a {
+      color: #222;
+      &:hover {
+        color: rgba(169,203,2,.9);
+      }
     }
   }
