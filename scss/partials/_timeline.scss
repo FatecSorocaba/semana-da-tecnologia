@@ -41,7 +41,7 @@
     position: relative;
 
     li {
-      margin: 34px 0;
+      margin: 48px 0;
       display: flex;
       position: relative;
 
@@ -72,6 +72,8 @@
       align-items: center;
       font-size: rem(20px);
       font-family: monospace;
+      width: 90px;
+      text-align: center;
 
       @include tablet {
         margin-right: 90px;
@@ -85,6 +87,18 @@
 
     p {
       margin: 0;
+    }
+
+    a {
+      background: #ace701;
+      color: #fff;
+      font-size: 12px;
+      padding: 6px;
+      display: inline-block;
+
+      &:hover {
+        background: #732d9d;
+      }
     }
 
     &:before {
