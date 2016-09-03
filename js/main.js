@@ -1,12 +1,21 @@
-function openCourse(item, day) {
-    var allPanels = document.getElementsByClassName("schedule");
+var tabs = document.querySelectorAll('.tab');
+var allPanels = document.querySelectorAll(".schedule");
 
+function activateTab(tab) {
+  //remove active de todas as outras tabs
+  tabs.forEach(function(tab) {
+    tab.classList.remove('active');
+  });
+  //adiciona active em t
+  tab.classList.add('active');
+}
+
+function openCourse(item, day) {
     for(var i=0;i<allPanels.length;i++){
         allPanels[i].style.display = 'none';
     }
-
-    item.className = "active";
     document.getElementById(day).style.display = 'block';
+    activateTab(item);
 }
 
 function initMap() {
