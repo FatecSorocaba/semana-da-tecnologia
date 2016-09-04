@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>SETEC 2016</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+      <header>
+          <h1>XV Semana da Tecnologia</h1>
+          <h2>de 03 a 08 de outubro na Fatec Sorocaba</h2>
+          <p class="corner">entrada gratuita</p>
+      </header>
+      <section class="container">
+          <h2>Agenda</h2>
+           <ul class="tab-list">
+               <li class="tab active" onclick="openCourse(this, 'seg');"><a href="javascript:void(0)">seg</a></li>
+               <li class="tab" onclick="openCourse(this, 'ter');"><a href="javascript:void(0)">ter</a></li>
+               <li class="tab" onclick="openCourse(this, 'qua');"><a href="javascript:void(0)">qua</a></li>
+               <li class="tab" onclick="openCourse(this, 'qui');"><a href="javascript:void(0)">qui</a></li>
+               <li class="tab" onclick="openCourse(this, 'sex');"><a href="javascript:void(0)">sex</a></li>
+               <li class="tab" onclick="openCourse(this, 'sab');"><a href="javascript:void(0)">sab</a></li>
+           </ul>
+           <div id="seg" class="schedule" style="display: block">
+             <div class="timeline-container">
+               <h3>Segunda - 03/outubro</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>08:00</span>
+                   <div>
+                     <strong>Conheça o pinguim:como começar a usar linux</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00 - 12:00</span>
+                   <div>
+                     <strong>Mini-curso: HTML + CSS - 1º dia</strong>
+                     <p>Instrutor: Felipe Soares - Fatec</p>
+                     <p>Conteúdo: Nesse mini-curso serão abordados conceitos básicos de front-end e técnicas de desenvolvimento.</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00</span>
+                   <div>
+                     <strong>Cerimônia de Abertura</strong>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00</span>
+                   <div>
+                     <strong>Testes e Automação de Software</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>20:00</span>
+                   <div>
+                     <strong>Docker, AWS e Google Cloud: Introdução à carreira de DevOps</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>21:00</span>
+                   <div>
+                     <strong>Segurança para Web</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div id="ter" class="schedule">
+             <div class="timeline-container">
+               <h3>Terça - 04/outubro</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>08:00</span>
+                   <div>
+                     <strong>Currículo+Carreira+Entrevistas</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00 - 12:00</span>
+                   <div>
+                     <strong>Mini-curso: HTML + CSS - 2º dia</strong>
+                     <p>Instrutor: Felipe Soares - Fatec</p>
+                     <p>Conteúdo: Nesse mini-curso serão abordados conceitos básicos de front-end e técnicas de desenvolvimento.</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Mini-curso: APIs com NodeJS - 1º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Python + Flask - 1º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Mini-curso: Ionic 2 - 1º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div id="qua" class="schedule">
+             <div class="timeline-container">
+               <h3>Quarta - 05/outubro</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>08:00</span>
+                   <div>
+                     <strong>Aprendendo qualquer linguagem/framework: um panorama da área atual</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00 - 12:00</span>
+                   <div>
+                     <strong>Mini-curso: Android is too izi - 1º dia</strong>
+                     <p>Instrutor: Caique Mitsuoka - Fatec</p>
+                     <p>Conteúdo: Nesse mini-curso serão abordados conceitos básicos de desenvolvimento Android</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Mini-curso: APIs com NodeJS - 2º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Python + Flask - 2º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Mini-curso: Ionic 2 - 2º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00</span>
+                   <div>
+                     <strong>UX no Google</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>20:00</span>
+                   <div>
+                     <strong>IoT</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>21:00</span>
+                   <div>
+                     <strong>Startups</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div id="qui" class="schedule">
+             <div class="timeline-container">
+               <h3>Quinta - 06/outubro</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>08:00</span>
+                   <div>
+                     <strong>Como Organizar a Semana de Tecnologia em 2017</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00 - 12:00</span>
+                   <div>
+                     <strong>Mini-curso: Android is too izi - 2º dia</strong>
+                     <p>Instrutor: Caique Mitsuoka - Fatec</p>
+                     <p>Conteúdo: Nesse mini-curso serão abordados conceitos básicos de desenvolvimento Android</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Mini-curso: APIs com NodeJS - 2º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Python + Flask - 2º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00 - 22:00</span>
+                   <div>
+                     <strong>Mini-curso: Ionic 2 - 2º dia</strong>
+                     <p>Instrutor: A cofirmar</p>
+                     <p>Conteúdo: descrição aqui</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00</span>
+                   <div>
+                     <strong>Overview de carreiras na área de tecnologia</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>20:00</span>
+                   <div>
+                     <strong>Carreira em Desenvolvimento de Games</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>21:00</span>
+                   <div>
+                     <strong>Carreira no Exterior: de Sorocaba ao Infinito e Além</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div id="sex" class="schedule">
+             <div class="timeline-container">
+               <h3>Sexta - 07/outubro</h3>
+               <ul class="timeline-item">
+                 <li>
+                   <span>08:00</span>
+                   <div>
+                     <strong>Programação Competitiva</strong>
+                     <p>A confirmar</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>09:00 - 12:00</span>
+                   <div>
+                     <strong>Mini-curso: Android is too izi - 3º dia</strong>
+                     <p>Instrutor: Caique Mitsuoka - Fatec</p>
+                     <p>Conteúdo: Nesse mini-curso serão abordados conceitos básicos de desenvolvimento Android</p>
+                     <a href="#" target="_blank">Inscreva-se</a>
+                   </div>
+                 </li>
+                 <li>
+                   <span>19:00</span>
+                   <div>
+                     <strong>Palestras Relâmpago</strong>
+                     <p>Uma sessão de palestras rápidas sobre: entrevista&currículo, read search and ask, parque tecnológico, silicon valley, UX, comunidade, pokemon go, deep web&tor, netflix, freela e programação competitiva</p>
+                   </div>
+                 </li>
+                 <li>
+                   <span>20:00</span>
+                   <div>
+                     <strong>Fish Bowl</strong>
+                   </div>
+                 </li>
+                 <li>
+                   <span>21:00</span>
+                   <div>
+                     <strong>Encerramento</strong>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </div>
+           <div id="sab" class="schedule">
+             <div class="timeline-container">
+               <h3>Sábado - 08/outubro</h3>
+               <div class="area-commitao">
+                 <div>
+                  <h2>Comittão</h2>
+                  <p>Espaço reservado aprender como contribuir no GitHub e entender o fluxo de trabalho, juntamente com instrutores que trabalham na área de desenvolvimento.</p>
+                  <p>Venha contribuir com projetos open-source!</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+       </section>
+
+       <section class="collection">
+         <h2>Arrecadação de alimentos</h2>
+         <p>
+           Contribua com a arrecadação!
+         </p>
+         <p>
+           Traga 1kg de alimento não-perecível.
+         </p>
+       </section>
+        <section class="container support">
+          <h2><strong>Apoio</strong></h2>
+          <ul>
+            <li>
+                <img src="../img/tegra.png" />
+            </li>
+
+            <li>
+              <img src="../img/eucompraria.png" />
+            </li>
+
+            <li>
+              <img src="../img/mocha-studio.png" />
+            </li>
+          </ul>
+       </section>
+
+       <section class="organization">
+          <div class="container">
+            <h2>Organização</h2>
+            <p>Este evento é organizado pelos alunos da Fatec Sorocaba e comunidade</p>
+            <a href="https://github.com/FatecSorocaba/faca-parte" target="_blank" class="btn">Faça parte</a>
+          </div>
+       </section>
+
+      <section class="location container">
+           <h2>Localização</h2>
+           <div id="map"></div>
+      </section>
+
+      <section class="contact">
+         <h2>Contato</h2>
+         <h3>setec@gmail.com</h3>
+      </section>
+
+      <footer>
+        <p>
+          <a href="https://github.com/FatecSorocaba/" target="_blank"><span class="fa fa-creative-commons" aria-hidden="true"></span> GitHub Fatec Sorocaba</a>
+        </p>
+        <p>
+          <a href="http://fatecsorocaba.edu.br/" target="_blank">Fatec Sorocaba - site oficial</a>
+        </p>
+      </footer>
+     <script type="text/javascript" src="js/main.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPGdaE7UwSEinw0ck25l_gcXCva0Wg9uw&signed_in=true&callback=initMap" async defer>
+     </script>
+  </body>
+</html>
