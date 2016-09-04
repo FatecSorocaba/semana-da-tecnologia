@@ -120,12 +120,12 @@
 }
 
 .area-commitao {
-
   div {
-    width: calc(100% - 3rem);
-    height: 240px;
-    background-color: #8c2154;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #f0f0f0;
     @include border-radius(1%);
+    padding: 40px 100px;
   }
 
   h2, p {
@@ -133,7 +133,8 @@
   }
 
   h2 {
-    padding-top: 3rem;
+    padding: 0px;
+    margin-bottom: 20px;
   }
 
 }
