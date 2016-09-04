@@ -11,37 +11,42 @@ function activateTab(tab) {
 }
 
 function openCourse(item, day) {
-    for(var i=0;i<allPanels.length;i++){
-        allPanels[i].style.display = 'none';
-    }
-    document.getElementById(day).style.display = 'block';
-    activateTab(item);
+  for(var i=0;i<allPanels.length;i++){
+      allPanels[i].style.display = 'none';
+  }
+  document.getElementById(day).style.display = 'block';
+  activateTab(item);
 }
 
 function initMap() {
-    var myLatlng = {lat: -23.482069, lng: -47.425131};
-    var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
+  var myLatlng = {lat: -23.482069, lng: -47.425131};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
     center: myLatlng,
-	scrollwheel: false,
-});
+    scrollwheel: false,
+  });
 
-var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
     position: myLatlng,
     map: map,
-    title: 'Click to zoom'
-});
+    title: 'Fatec Sorocaba',
+    icon: '../img/pin.png'
+  });
+
+  var infowindow = new google.maps.InfoWindow({
+    content: '<strong>Fatec Sorocaba</strong> <br> Av. Eng. Carlos Reinaldo Mendes, 2015',
+    maxWidth: 300
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+
+  infowindow.open(map,marker);
 
   map.addListener('center_changed', function() {
-    // 3 seconds after the center of the map has changed, pan back to the
-    // marker.
     window.setTimeout(function() {
       map.panTo(marker.getPosition());
     }, 3000);
-  });
-
-  marker.addListener('click', function() {
-    map.setZoom(8);
-    map.setCenter(marker.getPosition());
   });
 }
