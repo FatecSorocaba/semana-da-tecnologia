@@ -1,0 +1,17 @@
+.collection {
+  min-height: 10vh;
+  display: flex;
+  background-color: #7a369d;
+  flex-flow: column;
+  text-align: center;
+  color: #fff;
+
+  h2 {
+    margin: auto auto 2rem auto;
+    color: #fff;
+  }
+
+  p {
+    margin: 0 auto auto auto;
+  }
+}
