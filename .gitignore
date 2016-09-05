@@ -1,8 +1,6 @@
 # folders
 node_modules/
 bower_components/
-dist/
-css/
 
 # file extensions
 .DS_Store
