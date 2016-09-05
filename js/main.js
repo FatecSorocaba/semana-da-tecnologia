@@ -30,7 +30,7 @@ function initMap() {
     position: myLatlng,
     map: map,
     title: 'Fatec Sorocaba',
-    icon: '../img/pin.png'
+    icon: 'img/pin.png'
   });
 
   var infowindow = new google.maps.InfoWindow({
