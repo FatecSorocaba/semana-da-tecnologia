@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -284,6 +283,10 @@ header {
   width: 26%; }
   .support li img {
     max-width: 100%; }
+
+.support img {
+  display: block;
+  margin: auto; }
 
 /*button*/
 .btn {
