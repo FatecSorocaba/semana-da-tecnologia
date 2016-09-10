@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -260,6 +261,9 @@ header {
     color: #fff; }
   .collection p {
     margin: 0 auto auto auto; }
+
+.support .fatec-img {
+  max-width: 60%; }
 
 .support h2 {
   margin-bottom: 2rem; }
