@@ -262,6 +262,9 @@ header {
   .collection p {
     margin: 0 auto auto auto; }
 
+.support .fatec-img {
+  max-width: 60%; }
+
 .support h2 {
   margin-bottom: 2rem; }
 
