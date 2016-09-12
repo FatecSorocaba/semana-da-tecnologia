@@ -18,7 +18,8 @@ img {
   border: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #7a369d; }
 
 input[type=submit] {
   cursor: pointer;
