@@ -42,7 +42,10 @@ h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 2.625rem; }
+  font-size: 2.125rem; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.625rem; } }
 
 h3 {
   font-size: 1.75rem; }
@@ -62,7 +65,10 @@ p {
   margin: 10px 0; }
 
 li {
-  font-size: 1.75rem; }
+  font-size: 20 px/16pxrem; }
+  @media (min-width: 768px) {
+    li {
+      font-size: 1.75rem; } }
 
 header {
   margin: auto;

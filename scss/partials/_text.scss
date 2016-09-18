@@ -12,7 +12,10 @@ h1 {
 }
 
 h2 {
-  font-size: rem(42px);
+  font-size: rem(34px);
+  @include tablet {
+    font-size: rem(42px);
+  }
 }
 
 h3 {
@@ -42,7 +45,10 @@ p {
 //list-itens
 
 li {
-  font-size: rem(28px);
+  font-size: rem(20 px);
+  @include tablet {
+    font-size: rem(28px);
+  }
 }
 
 //inline elements
