@@ -60,12 +60,15 @@ h6 {
   font-size: 1.25rem; }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin: 10px 0; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.25rem; } }
 
 li {
-  font-size: 20 px/16pxrem; }
+  font-size: 1.375rem; }
   @media (min-width: 768px) {
     li {
       font-size: 1.75rem; } }
