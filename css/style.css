@@ -239,9 +239,12 @@ header {
   background-color: #f0f0f0;
   -webkit-border-radius: 1%;
   border-radius: 1%;
-  padding: 40px 100px; }
+  padding: 20px 10px; }
+  @media (min-width: 768px) {
+    .area-commitao div {
+      padding: 40px 100px; } }
 
-.area-commitao h2, .area-commitao p {
+.area-commitao h2, .area-commitao h3, .area-commitao p {
   text-align: center; }
 
 .area-commitao h2 {

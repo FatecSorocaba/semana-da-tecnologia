@@ -125,11 +125,14 @@
     margin: 20px 0;
     background-color: #f0f0f0;
     @include border-radius(1%);
-    padding: 40px 100px;
+    padding: 20px 10px;
+    @include tablet {
+      padding: 40px 100px;
+    }
   }
 
-  h2, p {
-    text-align: center
+  h2, h3, p {
+    text-align: center;
   }
 
   h2 {
