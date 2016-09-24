@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -245,6 +246,9 @@ header {
   @media (min-width: 768px) {
     .area-commitao div {
       padding: 40px 100px; } }
+
+.area-commitao ul {
+  text-align: center; }
 
 .area-commitao h2, .area-commitao h3, .area-commitao p {
   text-align: center; }
