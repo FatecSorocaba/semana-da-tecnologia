@@ -275,8 +275,10 @@ header {
   .collection h2 {
     margin: auto auto 2rem auto;
     color: #fff; }
+  .collection h3 {
+    margin-bottom: 10px; }
   .collection p {
-    margin: 0 auto auto auto; }
+    margin: 2px auto auto auto; }
 
 .support .fatec-img {
   max-width: 60%; }
@@ -306,6 +308,8 @@ header {
       -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
       flex-flow: row wrap; } }
+  .support ul .center-img {
+    margin: auto; }
 
 .support li {
   margin: 25px auto;
