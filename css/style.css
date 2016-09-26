@@ -306,6 +306,8 @@ header {
       -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
       flex-flow: row wrap; } }
+  .support ul .center-img {
+    margin: auto; }
 
 .support li {
   margin: 25px auto;
