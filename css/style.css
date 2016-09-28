@@ -237,6 +237,13 @@ header {
   display: none; }
 
 .area-commitao div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   width: 100%;
   margin: 20px 0;
   background-color: #f0f0f0;
@@ -256,6 +263,16 @@ header {
 .area-commitao h2 {
   padding: 0px;
   margin-bottom: 20px; }
+
+.area-commitao .inscription-button {
+  margin: 20px auto;
+  background: #732d9d;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  display: inline-block; }
+  .area-commitao .inscription-button:hover {
+    background: #ace701; }
 
 .none {
   display: none; }

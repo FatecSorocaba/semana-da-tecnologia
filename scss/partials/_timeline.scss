@@ -121,6 +121,8 @@
 
 .area-commitao {
   div {
+    display: flex;
+    flex-flow: column;
     width: 100%;
     margin: 20px 0;
     background-color: #f0f0f0;
@@ -141,6 +143,19 @@
   h2 {
     padding: 0px;
     margin-bottom: 20px;
+  }
+
+  .inscription-button {
+    margin: 20px auto;
+    background: #732d9d;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    display: inline-block;
+
+    &:hover {
+      background: #ace701;
+    }
   }
 
 }
