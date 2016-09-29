@@ -336,10 +336,12 @@ header {
   width: 26%; }
   @media (min-width: 768px) {
     .support li {
-      margin: auto 0; } }
+      margin: 30px 0; } }
   .support li img {
-    margin-top: 40px;
     max-width: 100%; }
+    @media (min-width: 768px) {
+      .support li img {
+        max-width: 80%; } }
 
 .support img {
   display: block;
