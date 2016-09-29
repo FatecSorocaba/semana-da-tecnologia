@@ -338,6 +338,7 @@ header {
     .support li {
       margin: auto 0; } }
   .support li img {
+    margin-top: 40px;
     max-width: 100%; }
 
 .support img {
