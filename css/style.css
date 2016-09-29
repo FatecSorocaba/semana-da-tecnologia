@@ -131,6 +131,9 @@ header {
     -o-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg); }
 
+.info {
+  margin: 30px auto; }
+
 .tab-list {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
