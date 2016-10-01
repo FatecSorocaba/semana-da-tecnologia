@@ -134,6 +134,9 @@ header {
 .info {
   margin: 30px auto; }
 
+.heart {
+  font-size: 30px; }
+
 .tab-list {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
