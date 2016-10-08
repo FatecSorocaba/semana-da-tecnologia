@@ -7,7 +7,8 @@ Esse é o site da Semana da Tecnologia de 2016! :D
   Digite os comandos abaixo para que as dependências sejam instaladas de maneira global:
 
 
-  ## Instale o nvm
+  ### Instale o nvm
+
 - ```curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash ```
 
   Dica: para que não seja necessário executar o scrip do nvm toda vez que iniciar o terminal, posicione-se na home e encontre um arquivo chamado .bashrc. Adicione a seguinte linha no final do arquivo:
