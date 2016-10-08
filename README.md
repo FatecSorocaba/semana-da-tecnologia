@@ -27,13 +27,13 @@ Após ter instalado as dependencias globalmente, posicione-se na pasta do projet
 - ```npm install```
 - ```bower install```
 
-## Rodando o projeto
+### Rodando o projeto
 1. npm install
 2. bower install
 3. gulp
 4. start coding!
 
-## Contribuindo
+### Contribuindo
 
 Primeiramente faça um fork do projeto. Clone o repositório forkado e faça suas contribuições.
 
