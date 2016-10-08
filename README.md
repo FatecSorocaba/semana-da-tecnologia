@@ -6,6 +6,7 @@ Esse é o site da Semana da Tecnologia de 2016! :D
 ## Dependências
   Digite os comandos abaixo para que as dependências sejam instaladas de maneira global:
 
+
   ## Instale o nvm
 - ```curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash ```
 
@@ -15,14 +16,19 @@ Esse é o site da Semana da Tecnologia de 2016! :D
 
   ## Instalando o nodejs
 -  ```nvm install stable```
+
   ## Instalando o npm
 -  ```sudo apt-get install npm```
+
   ## Instalando o bower
 -  ```npm install bower -g```
+
   ## Instalando o gulp
 -  ```gulp: npm install gulp -g```
 
+
   ## Instalações locais
+
 Após ter instalado as dependencias globalmente, posicione-se na pasta do projeto e digite:
 - ```npm install```
 - ```bower install```
