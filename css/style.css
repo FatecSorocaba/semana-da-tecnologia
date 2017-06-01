@@ -1,4 +1,3 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +25,11 @@ input[type=submit] {
 .container {
   width: 90%;
   margin: 0 auto; }
+
+.division {
+  background-color: #FFF;
+  height: 5px;
+  width: 100%; }
 
 section {
   padding: 4vh 2vw; }
