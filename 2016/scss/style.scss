@@ -1,0 +1,19 @@
+//primary Sass file
+
+@import "modules/functions";
+@import "modules/mixins";
+@import "modules/breakpoints";
+@import "modules/variables";
+
+@import "partials/general";
+@import "partials/section";
+@import "partials/text";
+
+@import "partials/header";
+@import "partials/timeline";
+@import "partials/collection";
+@import "partials/support";
+@import "partials/organization";
+@import "partials/location";
+@import "partials/contact";
+@import "partials/footer";

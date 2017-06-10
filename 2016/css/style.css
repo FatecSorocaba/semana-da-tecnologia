@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +26,6 @@ input[type=submit] {
 .container {
   width: 90%;
   margin: 0 auto; }
-
-.division {
-  background-color: #FFF;
-  height: 5px;
-  width: 100%; }
 
 section {
   padding: 4vh 2vw; }
@@ -75,8 +71,6 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
@@ -111,7 +105,7 @@ header {
     color: #fff; }
     @media (min-width: 768px) {
       header h2 {
-        font-size: 2.375rem; } }
+        font-size: 1.75rem; } }
   header .corner {
     background: #a9cb02;
     font-size: 16px;
@@ -256,8 +250,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #7a369d;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
@@ -277,8 +269,6 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
@@ -361,8 +351,6 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -webkit-flex-flow: column;
     -ms-flex-flow: column;
     flex-flow: column; }
@@ -378,16 +366,12 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
   padding: 1vh 2.5vw; }
   @media (min-width: 768px) {
     footer {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
       -webkit-flex-flow: row;
       -ms-flex-flow: row;
       flex-flow: row;
@@ -397,8 +381,6 @@ footer {
       justify-content: space-between; } }
   @media (min-width: 768px) {
     footer ul {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
       -webkit-flex-flow: row;
       -ms-flex-flow: row;
       flex-flow: row;

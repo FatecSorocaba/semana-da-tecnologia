@@ -1,0 +1,6 @@
+# folders
+node_modules/
+bower_components/
+
+# file extensions
+.DS_Store
