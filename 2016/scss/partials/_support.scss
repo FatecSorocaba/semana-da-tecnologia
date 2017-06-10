@@ -1,0 +1,26 @@
+.support {
+	h2 {
+		margin-bottom: 2rem;
+	}
+
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 0 auto 40px auto;
+		justify-content: space-between;
+	}
+
+	li {
+		margin: auto 0;
+		width: 26%;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	img {
+		display: block;
+		margin: auto;
+	}
+}
