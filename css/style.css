@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +27,7 @@ input[type=submit] {
   width: 90%;
   margin: 0 auto; }
 
-.division {
+.division-stripe {
   background-color: #FFF;
   height: 5px;
   width: 100%; }
