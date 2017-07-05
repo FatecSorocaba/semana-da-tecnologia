@@ -40,6 +40,6 @@ gulp.task('watch', function() {
 
 });
 
-gulp.task('default', ['dependencies', 'sass'], function() {
+gulp.task('default', ['dependencies', 'sass', 'watch'], function() {
   gulp.start('dist');
 });
