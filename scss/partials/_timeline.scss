@@ -1,3 +1,11 @@
+.info {
+    margin: 30px auto;
+}
+
+.heart {
+  font-size: 30px;
+}
+
 .tab-list {
     align-items: stretch;
     display: inline-flex;
@@ -121,20 +129,41 @@
 
 .area-commitao {
   div {
+    display: flex;
+    flex-flow: column;
     width: 100%;
     margin: 20px 0;
     background-color: #f0f0f0;
     @include border-radius(1%);
-    padding: 40px 100px;
+    padding: 20px 10px;
+    @include tablet {
+      padding: 40px 100px;
+    }
   }
 
-  h2, p {
-    text-align: center
+  ul {
+   text-align: center;
+  }
+  h2, h3, p {
+    text-align: center;
   }
 
   h2 {
     padding: 0px;
     margin-bottom: 20px;
+  }
+
+  .inscription-button {
+    margin: 20px auto;
+    background: #732d9d;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    display: inline-block;
+
+    &:hover {
+      background: #ace701;
+    }
   }
 
 }
