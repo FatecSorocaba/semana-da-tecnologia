@@ -120,6 +120,39 @@ header {
     -o-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg); }
 
+.support h2 {
+  margin-bottom: 2rem; }
+
+.support ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 0 auto 40px auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.support li {
+  margin: auto 0;
+  width: 26%; }
+  .support li img {
+    max-width: 60%; }
+  .support li img.cps {
+    max-width: 70%; }
+  .support li img.governo {
+    max-width: 50%; }
+
+.support img {
+  display: block;
+  margin: auto; }
+
 .contact {
   background-color: #9C27B0;
   text-align: center;
@@ -151,6 +184,17 @@ header {
     background-color: #B2FF59;
     max-width: 150px;
     margin: 1rem auto auto; }
+  @media (min-width: 768px) {
+    .contact {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column; } }
 
 footer {
   background-color: #fff;
