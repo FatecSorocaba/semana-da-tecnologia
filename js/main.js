@@ -1,3 +1,24 @@
+var tabs = document.querySelectorAll('.tab');
+var allPanels = document.querySelectorAll(".schedule");
+
+function activateTab(tab) {
+  //remove active de todas as outras tabs
+  for (i = 0; i < tabs.length; ++i) {
+    tabs[i].classList.remove('active');
+  }
+  //adiciona active em t
+  tab.classList.add('active');
+}
+
+function openCourse(item, day) {
+  for(var i=0;i<allPanels.length;i++){
+      allPanels[i].style.display = 'none';
+  }
+  document.getElementById(day).style.display = 'block';
+  activateTab(item);
+}
+
+//Mapa
 function initMap() {
   const myLatlng = {lat: -23.482069, lng: -47.425131};
   const map = new google.maps.Map(document.getElementById('map'), {
