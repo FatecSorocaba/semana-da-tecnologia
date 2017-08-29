@@ -121,7 +121,8 @@ header {
     -webkit-transform: rotate(-45deg); }
 
 .support h2 {
-  margin-bottom: 2rem; }
+  margin: auto;
+  text-align: center; }
 
 .support ul {
   display: -webkit-box;
