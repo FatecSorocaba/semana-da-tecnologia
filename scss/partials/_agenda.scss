@@ -15,7 +15,7 @@
       color: $light-purple;
       padding: 26px .5px;
       display: block;
-      font-size: 0.75rem;
+      font-size: .75rem;
       @media (min-width: 1024px) {
       font-size: 1.25rem;
       }
@@ -76,7 +76,7 @@
     display: flex;
     align-items: center;
     font-size: rem(20px);
-    font-family: monospace;
+    font-family: $detail-font;
     width: 90px;
     text-align: center;
 
