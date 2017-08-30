@@ -32,14 +32,10 @@ input[type=submit] {
 .container {
 	width: 90%;
 	margin: 0 auto;
-
-	h4{
-		
-	}
 }
 
 .division-stripe {
-	background-color: #FFF;
+	background-color: $white;
 	height: 5px;
 	width: 100%;
 }
