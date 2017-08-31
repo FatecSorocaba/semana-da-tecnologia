@@ -19,21 +19,24 @@
     background-color: #FFF;
   }
 
-  ul {
-    display: flex;
-    flex-flow: column;
-  }
-
-  .button {
-    border-radius: 8px;
-    padding: 10px 20px;
+  .button{
     background-color: #B2FF59;
-    max-width: 150px;
-    margin: 1rem auto auto;
   }
 
-  @include tablet{
-    display: flex;
-    flex-flow: column;
+  @media(max-width:414px){
+    .button {
+      border-radius: 8px;
+      padding: 10px 20px;
+      max-width: 150px;
+      margin: 1rem auto auto;
+    }
+  }
+
+  @media(min-width: 768px){
+    text-align: left;
+    .button{
+      border-radius: 8px;
+      max-width: 150px;
+    }
   }
 }
