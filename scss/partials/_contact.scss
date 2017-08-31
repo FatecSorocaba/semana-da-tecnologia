@@ -1,7 +1,8 @@
 .contact {
-  background-color: #9C27B0;
-  text-align: center;
+  background-color: rgb(120,55,184);
+  text-align: left;
   min-height: 190px;
+  padding: 0;
 
   h2 {
     font-size: 2rem;
@@ -14,29 +15,42 @@
     color: #FFF;
   }
 
-  div {
-    margin-top: 50px;
-    background-color: #FFF;
+  .button {
+    background-color: #ccff90;
+    border-radius: 4px;
+    &:hover {
+      background-color: #b2ff59;
+    }
   }
 
-  .button{
-    background-color: #B2FF59;
-  }
-
-  @media(max-width:414px){
+  @media(max-width:414px) {
+    text-align: center;
     .button {
-      border-radius: 8px;
       padding: 10px 20px;
       max-width: 150px;
       margin: 1rem auto auto;
     }
   }
 
-  @media(min-width: 768px){
-    text-align: left;
-    .button{
-      border-radius: 8px;
-      max-width: 150px;
-    }
+  @media(min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      .button {
+        padding: 10px 20px;
+        max-width: 230px;
+        margin: 1rem auto auto;
+      }
+      &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      &__info {
+        margin-right: 50px;
+      }
   }
+
 }

@@ -2,8 +2,8 @@
 @import 'typography';
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #555;
+  font-family: $primary-font;
+  color: $light-black;
 }
 
 //headings

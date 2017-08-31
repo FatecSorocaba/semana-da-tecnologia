@@ -1,10 +1,13 @@
 footer {
-    background-color: #fff;
+    background-color: rgb(120,55,184);
     text-align: center;
-    color: #7a369d;
     display: flex;
     flex-flow: column;
-    padding: 1vh 2.5vw;
+    padding: 0.05vh 2.5vw;
+
+    p {
+      font-size: 12.5px;
+    }
 
     @media (min-width: 768px) {
       flex-flow: row;
@@ -25,9 +28,9 @@ footer {
     }
 
     a {
-      color: #222;
+      color: $white;
       &:hover {
-        color: rgba(169,203,2,.9);
+        color: $dark-green;
       }
     }
   }

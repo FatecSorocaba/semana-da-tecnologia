@@ -1,0 +1,61 @@
+const tabs = document.querySelectorAll('.tab');
+const allPanels = document.querySelectorAll('.schedule');
+
+function activateTab(tab) {
+
+  //remove active de todas as outras tabs
+  tabs.forEach(tab => {
+    tab.classList.remove('active');
+  }) 
+  //adiciona active em t
+  tab.classList.add('active');
+}
+
+function openCourse(item, day) {
+
+  allPanels.forEach(panel => {
+    panel.style.display = 'none';
+  })
+  
+  document.getElementById(day).style.display = 'block';
+  activateTab(item);
+}
+
+//Mapa
+function initMap() {
+
+  const myLatlng = {lat: -23.482069, lng: -47.425131};
+  const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+  });
+
+  const marker = new google.maps.Marker({
+
+    position: myLatlng,
+    map: map,
+    title: 'Fatec Sorocaba',
+    icon: 'img/pin.png'
+  });
+
+  const infowindow = new google.maps.InfoWindow({
+
+    content: '<strong>Fatec Sorocaba</strong> <br> Av. Eng. Carlos Reinaldo Mendes, 2015',
+    maxWidth: 300
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+
+    infowindow.open(map,marker);
+  });
+
+  infowindow.open(map,marker);
+
+  map.addListener('center_changed', function() {
+
+    window.setTimeout(function() {
+      map.panTo(marker.getPosition());
+    }, 3000);
+  });
+}

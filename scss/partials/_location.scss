@@ -1,0 +1,16 @@
+
+.location {
+  min-height: 100vh;
+  padding-left: 11px;
+
+  #map {
+    margin-top: 20px;
+    height: 80vh;
+    width: 80vw;
+
+    @include desktop {
+      width: 90vw;
+    }
+  }
+
+}
