@@ -1,5 +1,5 @@
 footer {
-    background-color: #9C27B0;
+    background-color: $dark-purple;
     text-align: center;
     display: flex;
     flex-flow: column;
@@ -28,9 +28,9 @@ footer {
     }
 
     a {
-      color: #fff;
+      color: $white;
       &:hover {
-        color: #B2FF59;
+        color: $dark-green;
       }
     }
   }
