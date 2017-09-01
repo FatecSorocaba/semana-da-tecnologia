@@ -19,6 +19,13 @@
     margin-top: 14px;
   }
 
+  i {
+        position: absolute;
+        left: 97%;
+        color: $dark-purple;
+        transition: .5s;
+  }        
+
   ul {
     list-style: none;
     perspective: 900;
@@ -37,6 +44,7 @@
       h3 {
         font-size: 1.3rem;
         color: $dark-black;
+        display: inline-block;
       }
 
       &:nth-of-type(1) {
@@ -92,13 +100,9 @@
           }
 
           &~i {
-            &:before {
-              transform: translate( 2px , 0 ) rotate( 45deg )
-            }
-
-            &:after {
-              transform: translate( -2px , 0 ) rotate( -45deg )
-            }
+            transform: rotate(180deg);
+            transition: .5s;
+            color: $dark-black;
           }
         }
       }
