@@ -8,21 +8,13 @@
     animation: flipdown .5s ease both;
   }
 
-  header{
-    min-height: 15vh;
-  }
-
   h2 {
-    font-size: 26px;
-    line-height: 34px;
-    cursor: pointer;
+    margin-bottom: 15px;
   }
 
-  p {
-    font-size: 23px;
-    line-height: 26px;
+  p {    
     overflow: hidden;
-    color: $dark-black;
+    color: $light-black;
     @extend .transition;
     margin-top: 14px;
   }
@@ -35,12 +27,17 @@
 
     li {
       position: relative;
-      padding: .05vh 2.5vw;
+      padding: .05vh ;
       margin: 0;
       padding-bottom: 4px;
       padding-top: 18px;
-      border-top: 1px solid $dark-black;
+      border-top: 1px solid $grey;
       @extend .flipIn;
+
+      h3 {
+        font-size: 1.3rem;
+        color: $dark-black;
+      }
 
       &:nth-of-type(1) {
         animation-delay: .5s;

@@ -1,41 +1,56 @@
 //common styles
 
 * {
-	margin: 0;
+  margin: 0;
   padding: 0;
-	@include box-sizing(border-box);
+  @include box-sizing(border-box);
 }
 
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 img {
-	border: 0;
+  border: 0;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 input[type=submit] {
-	cursor: pointer;
-	border: none;
+  cursor: pointer;
+  border: none;
 }
 
 .container {
-	width: 90%;
-	margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
+
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+
+    a {
+      color: $light-purple;
+      
+      &:hover {
+        color: $dark-purple;
+        cursor: pointer;    
+      }
+    }
+  }
 }
 
 .division-stripe {
-	background-color: $white;
-	height: 5px;
-	width: 100%;
+  background-color: $white;
+  height: 5px;
+  width: 100%;
 }
