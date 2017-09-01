@@ -1,4 +1,3 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
 * {
   margin: 0;
   padding: 0;
@@ -319,6 +318,11 @@ header {
     @media (min-width: 1024px) {
       .location #map {
         width: 90vw; } }
+
+.staff {
+  background-color: #FFF;
+  min-height: 40vh;
+  text-align: center; }
 
 .contact {
   background-color: #7837b8;
