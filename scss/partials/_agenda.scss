@@ -16,6 +16,11 @@
       padding: 26px .5px;
       display: block;
       font-size: .75rem;
+
+      &:hover {
+        color: $dark-purple;
+      }
+
       @media (min-width: 1024px) {
       font-size: 1.25rem;
       }
@@ -46,7 +51,7 @@
   position: relative;
 
   li {
-    margin: 48px 0;
+    margin-top: 30px;
     display: flex;
     position: relative;
 
@@ -119,6 +124,7 @@
       &:hover {
         background-color: $dark-green;
         color: $dark-black;
+        cursor: pointer;
       }
     }
   }
