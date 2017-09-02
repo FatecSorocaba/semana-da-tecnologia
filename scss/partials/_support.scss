@@ -1,4 +1,5 @@
 .support{
+  
   h2 {
     margin: auto;
     text-align: center;
@@ -94,7 +95,7 @@
         margin-bottom: 30px;
       }
 
-      @include tablet{
+      @include tablet {
         margin: auto 0;
         width: 26%;
 
