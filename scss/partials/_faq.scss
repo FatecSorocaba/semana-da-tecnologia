@@ -14,16 +14,22 @@
 
   p {    
     overflow: hidden;
-    color: $light-black;
+    color: $light-black;    
     @extend .transition;
     margin-top: 14px;
   }
 
   i {
     position: absolute;
+    color: $dark-purple;
+    transition: .5s;
+
+    @include desktop {
+    position: absolute;
     left: 97%;
     color: $dark-purple;
     transition: .5s;
+    }
   }        
 
   ul {
@@ -45,6 +51,11 @@
         font-size: 1.3rem;
         color: $dark-black;
         display: inline-block;
+        max-width: 240px;
+
+        @include desktop {
+          max-width: none;
+        }
       }
 
       &:nth-of-type(1) {
