@@ -1,10 +1,12 @@
-header {
-  margin: 10px;
+.header {
+  margin: auto;
   text-align: center;
   color: $white;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
+  align-items: center;
+  justify-content: center;
   background-image: url("../img/bg-header.jpg");
   background-size: cover;
   background-position: left;
@@ -24,15 +26,37 @@ header {
     content: "";
   }
 
+  &__button {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $dark-black;
+      font-size: 1rem;
+      margin-top: 40px;
+      background-color: rgba($dark-green, .8);
+      border-radius: 4px;
+      padding: 20px 30px;
+      transition: color .3s ease-in;
+
+      @include tablet {
+        font-size: 1.5rem;
+        margin-top: 80px;
+        padding: 20px 50px;
+      }
+
+      &:hover {
+        background-color: rgba($dark-green, .9);
+      }
+  }
+
   h1 {
     font-size: rem(34px);
     padding: 30px 12px 0px 12px;
-    margin: 30vh auto 10vh auto;
+    margin: 10vh auto 10vh auto;
     text-transform: uppercase;
     color: $white;
 
     @include tablet {
-      font-size: rem(34px);
+      font-size: rem(54px);
     }
 
     @include desktop {
@@ -43,13 +67,14 @@ header {
   .header__info {
     padding-top: 15px;
 
-    h2 {
+    p {
       font-size: rem(20px);
       color: $white;
-      padding-bottom: 15px;
+      padding-bottom: 5px;
 
       @include tablet {
-        font-size: rem(20px);
+        padding-top: 0;
+        font-size: rem(40px);
       }
 
       @include desktop {
@@ -59,21 +84,17 @@ header {
       }
     }
   }
-  
-
-
-
 
   .corner {
     background: $dark-green;
-    color: $light-black;
+    color: $dark-black;
     font-size: 10px;
     position:absolute;
     top: 20px;
     left: -77px;
     width: 225px;
     text-align: center;
-    @include transform(rotate(-45deg));
+    @include transfQorm(rotate(-45deg));
 
     @include desktop {
       font-size: 22px;
