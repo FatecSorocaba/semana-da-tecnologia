@@ -2,6 +2,8 @@
   h2 {
     margin: auto;
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
 
   .realizacao {
@@ -9,21 +11,21 @@
       display: flex;
       flex-flow: column wrap;
       align-items: center;
-      margin: 0 auto 40px auto;
+      margin: 0 auto 0 auto;
       justify-content: space-between;
 
       @include tablet {
         display: flex;
         flex-flow: row wrap;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 0 auto;
         justify-content: space-between;
       }
     }
-    
+
     li {
       margin: auto 0;
       width: 40%;
-    
+
       img {
         max-width: 100%;
       }
@@ -56,8 +58,8 @@
   }
 
   .apoio {
-
     h2 {
+      margin-top: 25px;
       margin-bottom: 15px;
     }
 
@@ -69,21 +71,25 @@
       display: flex;
       flex-flow: column wrap;
       align-items: center;
-      margin: 0 auto 40px auto;
+      margin: 0 auto 0 auto;
       justify-content: space-between;
 
       @include tablet {
         display: flex;
         flex-flow: row wrap;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 0 auto;
         justify-content: space-between;
       }
     }
-    
+
+    img.algorama {
+      margin-bottom: 0;
+    }
+
     li {
       margin: auto 0;
       width: 40%;
-    
+
       img {
         max-width: 100%;
         margin-bottom: 30px;

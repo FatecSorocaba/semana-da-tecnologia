@@ -94,7 +94,7 @@
     left: -77px;
     width: 225px;
     text-align: center;
-    @include transfQorm(rotate(-45deg));
+    @include transform(rotate(-45deg));
 
     @include desktop {
       font-size: 22px;

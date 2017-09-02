@@ -6,7 +6,8 @@ footer {
     padding: 0.05vh 2.5vw;
 
     p {
-      font-size: 12.5px;
+      font-size: 1rem;
+      color: $white;
     }
 
     @media (min-width: 768px) {
@@ -29,6 +30,7 @@ footer {
 
     a {
       color: $white;
+
       &:hover {
         color: $dark-green;
       }

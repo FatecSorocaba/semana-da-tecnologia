@@ -1,9 +1,13 @@
-.staff{
-  * { box-sizing: border-box; }
+.staff {
 
-  .carousel{
+  h2 {
+    text-align: center;
+  }
+
+  .carousel {
     padding: 30px 100px 20px 100px;
   }
+
   .carousel-cell {
     width: 150px;
     height: 150px;
@@ -11,7 +15,7 @@
     border-radius: 5px;
   }
 
-  .carousel-cell img{
+  .carousel-cell img {
     display: flex;
     margin: auto;
     max-width: 100%;
@@ -31,7 +35,5 @@
       height: 100px;
       margin-right: 15px;
     }
-    
   }
-
 }
