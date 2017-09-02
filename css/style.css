@@ -548,8 +548,7 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  min-height: 400px;
-  z-index: -1; }
+  min-height: 400px; }
   .video-wrapper::before {
     content: '';
     position: absolute;
@@ -560,7 +559,7 @@ footer {
     background-image: url("../img/video.gif");
     background-position: center;
     background-size: cover;
-    background-color: rgba(66, 66, 66, 0.5);
+    background-color: rgba(66, 66, 66, 0.6);
     -webkit-filter: blur(7px);
     filter: blur(7px);
     z-index: -2; }
