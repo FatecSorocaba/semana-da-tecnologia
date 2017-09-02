@@ -1,35 +1,112 @@
 .support{
-	h2 {
-		margin: auto;
+  h2 {
+    margin: auto;
     text-align: center;
-	}
+  }
 
-	ul {
-		display: flex;
-		flex-flow: row wrap;
-		margin: 0 auto 40px auto;
-		justify-content: space-between;
-	}
+  .realizacao{
 
-	li {
-		margin: auto 0;
-		width: 26%;
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      margin: 0 auto 40px auto;
+      justify-content: space-between;
 
-		img {
-			max-width: 60%;
-		}
+      @include tablet {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 auto 40px auto;
+        justify-content: space-between;
+      }
+    }
+    
+    li {
+      margin: auto 0;
+      width: 40%;
+    
+      img {
+        max-width: 100%;
+      }
 
-		img.cps{
-			max-width: 70%;
-		}
+      img.fatec {
+        margin-top: 15px;
+      }
 
-		img.governo{
-			max-width: 50%;
-		}
-	}
+      img.governo {
+          max-width: 70%;
+      }
 
-	img {
-		display: block;
-		margin: auto;
-	}
+      @include tablet {
+        margin: auto 0;
+        width: 26%;
+
+        img {
+          max-width: 60%;
+        }
+
+        img.fatec {
+          margin-top: 0;
+        }
+
+        img.cps {
+          max-width: 70%;
+        }
+
+        img.governo {
+          max-width: 50%;
+        }
+      }
+    }
+  }
+
+  .apoio {
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      margin: 0 auto 40px auto;
+      justify-content: space-between;
+
+      @include tablet {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 auto 40px auto;
+        justify-content: space-between;
+      }
+    }
+    
+    li {
+      margin: auto 0;
+      width: 40%;
+    
+      img {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      @include tablet{
+        margin: auto 0;
+        width: 26%;
+
+        img {
+          max-width: 60%;
+        }
+      }
+    }
+  }
+
+  img {
+    display: block;
+    margin: auto;
+  }
 }
