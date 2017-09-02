@@ -1,5 +1,5 @@
 .faq {
-  
+
   .transition {
     transition: all .25s ease-in-out;
   }
@@ -12,9 +12,9 @@
     margin-bottom: 15px;
   }
 
-  p {    
+  p {
     overflow: hidden;
-    color: $light-black;    
+    color: $light-black;
     @extend .transition;
     margin-top: 14px;
   }
@@ -24,13 +24,13 @@
     color: $dark-purple;
     transition: .5s;
 
-    @include desktop {
-    position: absolute;
-    left: 97%;
-    color: $dark-purple;
-    transition: .5s;
+    @include tablet {
+      position: absolute;
+      left: 97%;
+      color: $dark-purple;
+      transition: .5s;
     }
-  }        
+  }
 
   ul {
     list-style: none;
@@ -52,6 +52,10 @@
         color: $dark-black;
         display: inline-block;
         max-width: 240px;
+
+        @include tablet {
+          max-width: none;
+        }
 
         @include desktop {
           max-width: none;
