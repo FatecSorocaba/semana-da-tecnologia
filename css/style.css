@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +31,15 @@ input[type=submit] {
 .container {
   width: 90%;
   margin: 0 auto; }
+  .container h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right; }
+    .container h4 a {
+      color: #ab47bc; }
+      .container h4 a:hover {
+        color: #9c27b0;
+        cursor: pointer; }
 
 .division-stripe {
   background-color: #fff;
@@ -60,7 +70,7 @@ li {
   font-size: 1.75rem; }
 
 header {
-  margin: auto;
+  margin: 10px;
   text-align: center;
   color: #fff;
   min-height: 100vh;
@@ -86,26 +96,35 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(156, 39, 176, 0.6);
+    background-color: rgba(120, 55, 184, 0.6);
     z-index: -1;
     content: ""; }
   header h1 {
     font-size: 2.125rem;
-    padding: 48px 12px 0px 12px;
-    margin: auto auto 2rem auto;
+    padding: 30px 12px 0px 12px;
+    margin: 30vh auto 10vh auto;
     text-transform: uppercase;
     color: #fff; }
     @media (min-width: 768px) {
       header h1 {
-        font-size: 3.625rem; } }
-  header h2 {
-    font-size: 1.5rem;
-    padding-top: 24px;
-    margin: 2rem auto auto auto;
-    color: #fff; }
-    @media (min-width: 768px) {
-      header h2 {
-        font-size: 2.375rem; } }
+        font-size: 2.125rem; } }
+    @media (min-width: 1024px) {
+      header h1 {
+        font-size: 3.5rem; } }
+  header .header__info {
+    padding-top: 15px; }
+    header .header__info h2 {
+      font-size: 1.25rem;
+      color: #fff;
+      padding-bottom: 15px; }
+      @media (min-width: 768px) {
+        header .header__info h2 {
+          font-size: 1.25rem; } }
+      @media (min-width: 1024px) {
+        header .header__info h2 {
+          font-size: 2.125rem;
+          display: inline-block;
+          margin-right: 20px; } }
   header .corner {
     background: #b2ff59;
     color: #555;
@@ -186,6 +205,8 @@ header {
       padding: 26px .5px;
       display: block;
       font-size: .75rem; }
+      .tab-list li a:hover {
+        color: #9c27b0; }
       @media (min-width: 1024px) {
         .tab-list li a {
           font-size: 1.25rem; } }
@@ -205,7 +226,7 @@ header {
   margin: 0;
   position: relative; }
   .timeline-item li {
-    margin: 48px 0;
+    margin-top: 30px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -272,7 +293,8 @@ header {
       margin-top: 5px; }
       .timeline-item .label-subscribe a:hover {
         background-color: #b2ff59;
-        color: #424242; }
+        color: #424242;
+        cursor: pointer; }
   .timeline-item p {
     margin: 0; }
   .timeline-item:before {
@@ -308,21 +330,38 @@ header {
 .none {
   display: none; }
 
-.location {
-  min-height: 100vh;
-  padding-left: 11px; }
-  .location #map {
-    margin-top: 20px;
-    height: 80vh;
-    width: 80vw; }
-    @media (min-width: 1024px) {
-      .location #map {
-        width: 90vw; } }
+.staff * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-.staff {
-  background-color: #FFF;
-  min-height: 40vh;
-  text-align: center; }
+.staff .carousel {
+  padding: 30px 100px 20px 100px; }
+
+.staff .carousel-cell {
+  width: 150px;
+  height: 150px;
+  margin-right: 35px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+.staff .carousel-cell img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 100%; }
+
+.staff .flickity-prev-next-button .arrow {
+  fill: #7837b8; }
+
+@media (max-width: 414px) {
+  .staff .carousel {
+    padding: 20px 5px 5px 5px; }
+  .staff .carousel-cell {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px; } }
 
 .contact {
   background-color: #7837b8;
@@ -435,19 +474,12 @@ footer {
   -webkit-animation: flipdown .5s ease both;
   animation: flipdown .5s ease both; }
 
-.faq header {
-  min-height: 15vh; }
-
 .faq h2 {
-  font-size: 26px;
-  line-height: 34px;
-  cursor: pointer; }
+  margin-bottom: 15px; }
 
 .faq p {
-  font-size: 23px;
-  line-height: 26px;
   overflow: hidden;
-  color: #424242;
+  color: #555;
   margin-top: 14px; }
 
 .faq ul {
@@ -458,11 +490,14 @@ footer {
   margin: 0; }
   .faq ul li {
     position: relative;
-    padding: .05vh 2.5vw;
+    padding: .05vh;
     margin: 0;
     padding-bottom: 4px;
     padding-top: 18px;
-    border-top: 1px solid #424242; }
+    border-top: 1px solid #ccc; }
+    .faq ul li h3 {
+      font-size: 1.3rem;
+      color: #424242; }
     .faq ul li:nth-of-type(1) {
       -webkit-animation-delay: .5s;
       animation-delay: .5s; }

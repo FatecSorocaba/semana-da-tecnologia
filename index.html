@@ -32,14 +32,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
   </head>
   <body>
       <header>
           <h1>XXIV Semana da Tecnologia - 2017</h1>
           <div class="header__info">
             <h2>De 2 a 10 de Outubro</h2>
-            <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Fatec Sorocaba</h3>  
-          </div>          
+            <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Fatec Sorocaba</h3>
+          </div>
           <p class="corner">entrada gratuita</p>
       </header>
         <section class="container">
@@ -496,13 +497,57 @@
              </div>
            </div>
        </section>
+      <section class="support">
+        <div class="realizacao">
+          <h2>Realização</h2>
+          <ul>
+            <li>
+              <img src="img/fatec-logo.png" />
+            </li>
+            <li>
+              <img class="cps" src="img/cps-logo.png" />
+            </li>
+            <li>
+              <img class= "governo"src="img/governosp-logo.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="apoio">
+          <h2><strong>Apoio</strong></h2>
+          <ul>
+            <li>
+              <img src="img/CasaDoCodigo.png" />
+            </li>
+            <li>
+              <img src="img/CCBEU.png" />
+            </li>
 
+            <li>
+              <img src="img/unicid.jpg" />
+            </li>
+
+            <li>
+              <img src="img/eucompraria.png" />
+            </li>
+
+            <li>
+                <img src="img/tegra.png" />
+            </li>
+
+            <li>
+              <img src="img/mocha-studio.png" />
+            </li>
+
+            <li>
+              <img src="img/algorama.jpg" />
+            </li>
+          </ul>
+        </div>
       <section class="faq container">
         <h2>Perguntas frequentes</h2>
         <ul>
           <li>
             <input type="checkbox" checked>
-            
             <h3>Como funcionam as inscrições?</h3>
             <i class="fa fa-angle-up" aria-hidden="true"></i>
             <p>
@@ -535,7 +580,7 @@
             <p>
               Infelizmente, caso você não seja sorteado, não terá como participar do mini-curso. Mas ainda poderá assistir às palestras!
             </p>
-          </li>  
+          </li>
           <li>
             <input type="checkbox" checked>
 
@@ -555,7 +600,7 @@
             </p>
           </li>
         </ul>
-      </section>       
+      </section>
 
       <section class="support">
         <div class="realizacao">
@@ -578,7 +623,7 @@
             <li>
               <img src="img/CasaDoCodigo.png" />
             </li>
-            
+
             <li>
               <img src="img/CCBEU.png" />
             </li>
@@ -622,9 +667,69 @@
 
       <section class="staff">
         <h2>Organização</h2>
-        <div class="carrossel">
-
-        </div>
+        <div class="carousel" data-flickity='{ "pageDots": false,"wrapAround": true}'>
+            <div class="carousel-cell"/>
+              <img src="img/felipe-richter.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/caique-mitsuoka.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/felipe-soares.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/elet.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/matheus.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/beatriz.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/jullia.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/vinicius.jpeg">
+            </div>
+            <div class="carousel-cell">
+              <img src="img/felipe-bernardes.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/amanda.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/jean.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/tiago.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/allan.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/alex.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/daniel.jpg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/barbara.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/airton.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/andressa.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/emerson.jpeg"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/medson.jpg"/>
+            </div>
+          </div>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
       </section>
 
       <footer>
