@@ -15,7 +15,6 @@
   align-items: center;
   position: relative;
   min-height: 400px;
-  z-index: -1;
 
   &::before {
     content: '';
@@ -27,7 +26,7 @@
     background-image: url('../img/video.gif');
     background-position: center;
     background-size: cover;
-    background-color: rgba($dark-black, .5);
+    background-color: rgba($dark-black, .6);
     filter: blur(7px);
     z-index: -2;
   }
