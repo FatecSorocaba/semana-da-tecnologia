@@ -282,9 +282,6 @@ li {
       -ms-flex-pack: justify;
       justify-content: space-between; } }
 
-.support .apoio img.algorama {
-  margin-bottom: 0; }
-
 .support .apoio li {
   margin: auto 0;
   width: 40%; }
