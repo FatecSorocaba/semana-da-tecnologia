@@ -108,9 +108,17 @@
   }
 
   img {
-    @include desktop {
+    max-width: 65%;
+    padding-bottom: 15px;
+
+    @include tablet {
       max-width: 50%;
+    }
+
+    @include desktop {
+      max-width: 40%;
       padding-right: 50px;
     }
+
   }
 }
