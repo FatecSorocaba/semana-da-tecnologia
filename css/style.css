@@ -175,6 +175,16 @@ li {
         width: 250px;
         padding: 10px;
         text-align: center; } }
+  .header img {
+    max-width: 65%;
+    padding-bottom: 15px; }
+    @media (min-width: 768px) {
+      .header img {
+        max-width: 50%; } }
+    @media (min-width: 1024px) {
+      .header img {
+        max-width: 45%;
+        padding-right: 50px; } }
 
 .support h2 {
   margin: auto;
