@@ -104,5 +104,13 @@
       padding: 10px;
       text-align: center;
     }
+
+  }
+
+  img{
+    @include desktop {
+      max-width: 50%;
+      padding-right: 50px;
+    }
   }
 }
