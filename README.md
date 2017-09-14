@@ -1,5 +1,5 @@
-# site-setec-2016
-Esse é o site da Semana da Tecnologia de 2016! :D    
+# Intro
+Esse é o site da Semana da Tecnologia, um evento anual que acontece na Fatec Sorocaba! :D    
 ![codando](https://media.giphy.com/media/ZvLUtG6BZkBi0/giphy.gif)
 
 
@@ -31,8 +31,8 @@ Após ter instalado as dependencias globalmente, posicione-se na pasta do projet
 
 ### Rodando o projeto
 1. npm install
-3. gulp
-4. start coding!
+2. gulp
+3. start coding!
 
 ### Contribuindo
 
