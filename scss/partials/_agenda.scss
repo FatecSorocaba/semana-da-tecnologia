@@ -106,6 +106,7 @@
 
     p {
       color: $white;
+      margin: 0;
     }
   }
 
@@ -129,8 +130,13 @@
     }
   }
 
-  p {
-      margin: 0;
+  p.instructor-content {  
+    margin-top: 10px;
+    margin-bottom: 0px; 
+  }
+
+  p.description-content {
+    margin-top: 10px;
   }
 
   &:before {

@@ -43,9 +43,9 @@
         padding: 20px 50px;
       }
 
-      &:hover {
-        background-color: rgba($dark-green, .9);
-      }
+      // &:hover {
+      //   background-color: rgba($dark-green, .9);
+      // }
   }
 
   h1 {
@@ -117,7 +117,6 @@
 
     @include desktop {
       max-width: 45%;
-      padding-right: 50px;
     }
 
   }
