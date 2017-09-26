@@ -183,8 +183,7 @@ li {
         max-width: 50%; } }
     @media (min-width: 1024px) {
       .header img {
-        max-width: 45%;
-        padding-right: 50px; } }
+        max-width: 45%; } }
 
 .support h2 {
   margin: auto;
@@ -406,7 +405,8 @@ li {
     margin-top: 5px;
     margin-bottom: 5px; }
     .timeline-item .label-type p {
-      color: #fff; }
+      color: #fff;
+      margin: 0; }
   .timeline-item .label-subscribe {
     display: inline-block;
     margin-bottom: 10px; }
@@ -422,8 +422,11 @@ li {
         background-color: #b2ff59;
         color: #424242;
         cursor: pointer; }
-  .timeline-item p {
-    margin: 0; }
+  .timeline-item p.instructor-content {
+    margin-top: 10px;
+    margin-bottom: 0px; }
+  .timeline-item p.description-content {
+    margin-top: 10px; }
   .timeline-item:before {
     content: '';
     width: 2.5px;
