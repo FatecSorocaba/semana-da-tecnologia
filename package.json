@@ -1,29 +1,136 @@
 {
-  "name": "site-setec-2016",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felipebernardes/site-setec-2016.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/felipebernardes/site-setec-2016/issues"
-  },
-  "homepage": "https://github.com/felipebernardes/site-setec-2016#readme",
-  "devDependencies": {
-    "browser-sync": "^2.13.0",
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "node-sass": "^3.8.0"
-  }
+    "name": "site-setec-2016",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "paths": {
+        "src": {
+            "base": "./src/",
+            "css": "./src/css/",
+            "fontello": "./src/fontello/",
+            "fonts": "./src/fonts/",
+            "img": "./src/img/",
+            "json": "./src/json/",
+            "js": "./src/js/",
+            "scss": "./src/scss/",
+            "templates": "./src/templates"
+        },
+        "dist": {
+            "base": "./dist/",
+            "css": "./dist/css/",
+            "fonts": "./dist/fonts/",
+            "img": "./dist/img/",
+            "js": "./dist/js/"
+        },
+        "build": {
+            "base": "./build/",
+            "css": "./build/css/",
+            "fontello": "./build/fonts/fontello/",
+            "fonts": "./build/fonts/",
+            "js": "./build/js/",
+            "html": "./build/html/",
+            "img": "./build/img/"
+        },
+        "favicon": {
+            "src": "./src/img/favicon_src.png",
+            "dest": "./dist/img/site/",
+            "path": "/img/site/"
+        },
+        "scss": []
+    },
+    "urls": {
+        "live": "localhost:8080",
+        "local": "localhost:8080",
+        "critical": "localhost:8080"
+    },
+    "vars": {
+        "siteCssName": "main.min.css",
+        "scssName": "main.scss",
+        "cssName": "main.css"
+    },
+    "globs": {
+        "distCss": [
+            "./src/css/prism-theme.css",
+            "./build/fonts/fontello/css/fontello-codes.css",
+            "./build/css/*.css",
+            "./src/css/*.css"
+        ],
+        "img": [
+            "./dist/img/"
+        ],
+        "components": [
+            "./src/components/**/*.vue"
+        ],
+        "fonts": [
+            "./build/fonts/fontello/font/*.{eot,ttf,woff,woff2}",
+            "./src/fonts/*.{eot,ttf,woff,woff2}"
+        ],
+        "distJs": [
+            "./src/plugin.js",
+            "./build/js/*.js",
+            "./node_modules/lazysizes/lazysizes.min.js",
+            "./node_modules/lazysizes/plugins/bgset/ls.bgset.min.js",
+            "./node_modules/picturefill/dist/picturefill.min.js",
+            "./node_modules/vue/dist/vue.min.js",
+            "./node_modules/vue2-autocomplete/dist/vue2-autocomplete.js",
+            "./node_modules/vue-resource/dist/vue-resource.min.js"
+        ],
+        "babelJs": [
+            "./src/js/*.js"
+        ],
+        "inlineJs": [
+            "./node_modules/fg-loadcss/src/loadCSS.js",
+            "./node_modules/fg-loadcss/src/cssrelpreload.js",
+            "./node_modules/fontfaceobserver/fontfaceobserver.js",
+            "./node_modules/loadjs/dist/loadjs.min.js",
+            "./node_modules/tiny-cookie/tiny-cookie.min.js",
+            "./src/js/register-service-worker.js",
+            "./src/js/asyncload-blog-fonts.js",
+            "./src/js/asyncload-site-fonts.js"
+        ],
+        "siteIcon": "./dist/img/site/favicon.*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/felipebernardes/site-setec-2016.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/felipebernardes/site-setec-2016/issues"
+    },
+    "homepage": "https://github.com/felipebernardes/site-setec-2016#readme",
+    "devDependencies": {
+        "@babel/core": "^7.2.0",
+        "@babel/plugin-transform-runtime": "^7.2.0",
+        "@babel/preset-env": "^7.2.0",
+        "browserslist": "^4.3.5",
+        "fancy-log": "^1.3.3",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-cached": "^1.1.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.7.0",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-filter": "^5.1.0",
+        "gulp-if": "^2.0.2",
+        "gulp-imagemin": "^5.0.3",
+        "gulp-livereload": "^4.0.1",
+        "gulp-load-plugins": "^1.5.0",
+        "gulp-newer": "^1.4.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-print": "^5.0.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-size": "^3.0.0",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-uglify": "^3.0.1"
+    },
+    "dependencies": {
+        "natives": "^1.1.6"
+    }
 }

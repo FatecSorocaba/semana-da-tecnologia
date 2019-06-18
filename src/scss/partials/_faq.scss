@@ -1,0 +1,155 @@
+.faq {
+
+  .transition {
+    transition: all .25s ease-in-out;
+  }
+
+  .flipIn {
+    animation: flipdown .5s ease both;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    overflow: hidden;
+    color: $light-black;
+    @extend .transition;
+    margin-top: 14px;
+  }
+
+  i {
+    position: absolute;
+    color: $dark-purple;
+    transition: .5s;
+
+    @include tablet {
+      position: absolute;
+      left: 97%;
+      color: $dark-purple;
+      transition: .5s;
+    }
+  }
+
+  ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+
+    li {
+      position: relative;
+      padding: .05vh ;
+      margin: 0;
+      padding-bottom: 4px;
+      padding-top: 18px;
+      border-top: 1px solid $grey;
+      @extend .flipIn;
+
+      h3 {
+        font-size: 1.3rem;
+        color: $dark-black;
+        display: inline-block;
+        max-width: 240px;
+
+        @include tablet {
+          max-width: none;
+        }
+
+        @include desktop {
+          max-width: none;
+        }
+      }
+
+      &:nth-of-type(1) {
+        animation-delay: .5s;
+      }
+
+      &:nth-of-type(2) {
+        animation-delay: .75s;
+      }
+
+      &:nth-of-type(3) {
+        animation-delay: 1.0s;
+      }
+
+      &:nth-of-type(4) {
+        animation-delay: 1.25s;
+      }
+
+      &:nth-of-type(5) {
+        animation-delay: 1.50s;
+      }
+
+      &:nth-of-type(6) {
+        animation-delay: 1.75s;
+      }
+
+      &:nth-of-type(7) {
+        animation-delay: 2.0s;
+      }
+
+      &:nth-of-type(8) {
+        animation-delay: 2.25s;
+      }
+
+      &:last-of-type {
+        padding-bottom: 20px;
+      }
+
+      input[type=checkbox] {
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+
+        &:checked {
+          &~p {
+            margin-top: 0;
+            max-height: 0;
+            opacity: 0;
+            transform: translate( 0 , 50% ) ;
+          }
+
+          &~i {
+            transform: rotate(180deg);
+            transition: .5s;
+            color: $dark-black;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes flipdown{
+    0%{
+      opacity: 0;
+      transform-origin: top center;
+      transform: rotateX(-90deg);
+    }
+
+    5%{
+      opacity: 1;
+    }
+
+    80%{
+      transform: rotateX(8deg);
+    }
+
+    83%{
+      transform: rotateX(6deg);
+    }
+
+    92%{
+      transform: rotateX(-3deg);
+    }
+
+    100%{
+      transform-origin: top center;
+      transform: rotateX(0deg);
+    }
+  }
+}

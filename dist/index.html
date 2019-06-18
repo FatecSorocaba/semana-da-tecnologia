@@ -2,125 +2,1042 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <title>SETEC 2016</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>XXIV Semana de Tecnologia</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="https://fatecsorocaba.github.io/semana-da-tecnologia/img/opengraph.png"/>
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://fatecsorocaba.github.io/semana-da-tecnologia/">
+    <meta property="og:title" content="24ª Semana de Tecnologia 2017 da Fatec Sorocaba">
+    <meta property="og:description" content="Participe da segunda edição feita por alunos! De 02 a 07 de outubro na Fatec Sorocaba.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
   </head>
   <body>
-    <section class="container">
-        <h2>Localização</h2>
-        <div id="map"></div>
-    </section>
+      <header class="header">
+          <img src="img/logo-semanadetecnologia.svg" alt="Logo da Semana de Tecnologia"/>
+          <div class="header__info">
+            <p>De 2 a 7 de Outubro</h2>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Fatec Sorocaba</h3>
+          </div>
 
-    <footer>
-      <h2>Contato</h2>
-      <h3>setec@gmail.com</h3>
-      <div>
-          <a href="#" class="link-footer">cc setec</a>
-          <a href="#" class="link-footer">Fatec Sorocaba</a>
-      </div>
-    </footer>
-    <script>
-        function initMap() {
-            var myLatlng = {lat: -23.482069, lng: -47.425131};
-            var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: myLatlng
-        });
+          <!-- <a class="header__button"
+            href="http://www.fatecsorocaba.edu.br/sisteventos2017"
+            target="_blank"
+            lass="btn"
+            rel="noopener noreferrer">
+            Inscreva-se para a semana!
+          </a> -->
 
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            title: 'Click to zoom'
-        });
+          <p class="corner">entrada gratuita</p>
+      </header>
 
-          map.addListener('center_changed', function() {
-            // 3 seconds after the center of the map has changed, pan back to the
-            // marker.
-            window.setTimeout(function() {
-              map.panTo(marker.getPosition());
-            }, 3000);
-          });
+      <section class="video">
+        <div class="video-wrapper">
+          <h2 class="video-wrapper__text">
+            Veja o que rolou no ano passado clicando
+            <a class="video-wrapper__link"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=5Ap_wVejTjI"
+              rel="noopener noreferrer">
+              aqui
+            </a>
+          </h2>
+        </div>
+      </section>
 
-          marker.addListener('click', function() {
-            map.setZoom(8);
-            map.setCenter(marker.getPosition());
-          });
-        }
-
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPGdaE7UwSEinw0ck25l_gcXCva0Wg9uw&signed_in=true&callback=initMap" async defer>
-    </script>
       <section class="container">
-          <h2>Agenda</h2>
-           <ul class="tab-list">
-               <li id="ads" class="ads"><a href="#" onclick="openCourse('cronoADS')">ADS</a></li>
-               <li id="fac" class="fab"><a href="#" onclick="openCourse('cronoFAB')">FAB</a></li>
-               <li id="sis" class="sis"><a href="#" onclick="openCourse('cronoSIS')">SIS</a></li>
-           </ul>
-           <div class="schedule">
+        <h2>Agenda ADS</h2>
+         <ul class="tab-list">
+             <li class="tab active" onclick="openCourse(this, 'seg');"><a href="javascript:void(0)">segunda (02/10)</a></li>
+             <li class="tab" onclick="openCourse(this, 'ter');"><a href="javascript:void(0)">terça (03/10)</a></li>
+             <li class="tab" onclick="openCourse(this, 'qua');"><a href="javascript:void(0)">quarta (04/10)</a></li>
+             <li class="tab" onclick="openCourse(this, 'qui');"><a href="javascript:void(0)">quinta (05/10)</a></li>
+             <li class="tab" onclick="openCourse(this, 'sex');"><a href="javascript:void(0)">sexta (06/10)</a></li>
+             <li class="tab" onclick="openCourse(this, 'sab');"><a href="javascript:void(0)">sabado (07/10)</a></li>
+         </ul>
+         <div id="seg" class="schedule" style="display: block">
+           <div class="timeline-container">
+             <ul class="timeline-item">
+                <li>
+                    <span>07:40 - 10:30</span>
+                    <div>
+                      <strong>Abertura - Manhã</strong>
+                      <div class="label-type">
+                         <p>palestra</p>
+                      </div>
+                      <p class="instructor-content"></p>
+                      <p class="description-content"></p>
+                    </div>
+                  </li>
+               <li>
+                 <span>10:40 - 11:20</span>
+                 <div>
+                   <strong>Cloud para quem não está com a cabeça nas nuvens</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p class="instructor-content">Palestrante: Caique Mitsuoka - Desenvolvedor na empresa Codeminer42</p>
+                   <p class="description-content">Conteúdo: Introdução a ideia de cloud, as principais tecnologias do mercado e um vislumbre de onde estamos indo.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>11:30 - 12:10</span>
+                 <div>
+                   <strong>Youtubers: a busca pela identificação do público jovem por meio de estratégias hipermidiáticas</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p class="instructor-content">Palestrante: Felipe Parra - Mestre em comunicação e cultura</p>
+                   <p class="description-content">Conteúdo: Apresentação de estratégias hipermidiáticas utilizadas no Youtube. Assim, descorre-se exemplos de tais recuros midiáticos usados pelos mais influentes Youtubers do Brasil.</p>
+                 </div>
+               </li>
+               <li>
+                  <span>19:00 - 20:30</span>
+                  <div>
+                    <strong>Abertura - Noite</strong>
+                    <div class="label-type">
+                       <p>palestra</p>
+                    </div>
+                    <p class="instructor-content"></p>
+                    <p class="description-content"></p>
+                  </div>
+               </li>
+               <li>
+                 <span>20:40 - 21:20</span>
+                 <div>
+                   <strong>Analise preditiva para marketing de precisão</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p class="instructor-content">Palestrante: Henrique Vieira Lopes - Cientista de dados na empresa Data H</p>
+                   <p class="description-content">Conteúdo: Um dos grandes desafios do varejo atualmente é ser mais eficiente nas suas campanhas de marketing. Como conhecer os hábitos dos seus clientes? Estamos inundados em um mundo de informações e podemos adquirir muitas ideias analisando esses dados.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>21:30 - 22:10</span>
+                 <div>
+                   <strong>Primeiros passos com Xamarin</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p class="instructor-content">Palestrante: Juliano Custódio - Desenvolvedor na empresa Algorama</p>
+                   <p class="description-content">Conteúdo: Nesta palestra vamos entender o que é o Xamarin, seus tipos de aplicações, como configurar o ambiente para desenvolvimento, como criar uma aplicação Xamarin.Forms e dicas de produtividade.</p>
+                 </div>
+               </li>
+               <li>
+                <span>20:30 - 22:00</span>
+                <div>
+                  <strong>Introdução ao framework .NET</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Vitor Manfré e Natanael Lemos - Desenvolvedores na empresa Ventron</p>
+                  <p class="description-content">Conteúdo: No curso falaremos sobre o .NET Core versão multiplataforma do .NET Framework. Durante o curso, abordaremos os conceitos básicos da tecnologia e criaremos uma pequena WebAPI de exemplo.</p>
+                </div>
+              </li>
+              <li>
+                <span>20:30 - 22:00</span>
+                <div>
+                  <strong>Introdução a linguagem GO</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Felipe Siqueira Pinheiro e Felipe Augusto Trindade - Estagiário na IBM; Programador na GFT</p>
+                  <p class="description-content">Conteúdo: Introdução a linguagem de programação e a forma Go de pensar em código.</p>
+                </div>
+              </li>
+              <li>
+                  <span>20:30 - 22:00</span>
+                  <div>
+                    <strong>Introdução a Jogos com HTML5 & Javascript</strong>
+                    <div class="label-type">
+                       <p>minicurso</p>
+                    </div>
+                    <p class="instructor-content">Instrutor: Matheus Luiz da Silva - Fatec Sorocaba</p>
+                    <p class="description-content">Conteúdo: Uma introdução ao desenvolvimento de jogos com HTML5 Canvas e Javascript, mais uma pequena introdução à Spritesheet Animation e Pixel Art.</p>
+                  </div>
+              </li>
+              <li>
+                <span>20:30 - 22:00</span>
+                <div>
+                  <strong>Desenvolvendo com IONIC</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Vinicius Puente e Medson Oliveira</p>
+                  <p class="description-content">Conteúdo: O curso abordará desenvolvimento multiplataforma para dispositivos móveis.</p>
+                </div>
+              </li>
+              <li>
+                <span>20:30 - 22:00</span>
+                <div>
+                  <strong>Building applications with React and Redux</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Vitor Talaia e Felipe Soares - Desenvolvedores na Code Miner 42.</p>
+                  <p class="description-content">Conteúdo: Nesse minicurso, iremos criar uma aplicação básica usando React e depois iremos refatorá-la aplicando os conceitos do Redux. Conhecimento necessário: JavaScript (iremos utilizar ES6); Alguns conceitos básicos de programação funcional (funções puras, high order functions, etc.)</p>
+                </div>
+              </li>
+             </ul>
+           </div>
+         </div>
+
+         <div id="ter" class="schedule">
+           <div class="timeline-container">
+             <ul class="timeline-item">
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Appium: Automatize seus Testes Mobile com Rucumber e Ruby</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutora: Mariana Elisa Moisés - MBA em Gerenciamento de Projetos</p>
+                   <p class="description-content">Conteúdo: minicurso sobre o framework Appium, muito utilizado para automação de testes mobile. Vou apresentar a evolução das skills do Testador alinhada as novas demandas de mercado, além de um exemplo prático com simulação tanto com emulador quanto celular (físico).</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Conhecendo o XML no Android Studio</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Alex Barros Silva - Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: No mini curso serão abordadas utilizaçoes do XML (Extended Markup Language) no Android Studio assim como sua sintaxe.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>HTML & CSS</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Felipe Inocencio - Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Junte-se a mim e ao Faustão para aprender a base de HTML e CSS.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Programação com Python</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Fernando Miranda - Professor na Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Aprenda uma visão geral da linguagem de programação Python, sua sintaxe e aplicações.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Introdução a JavaScript ES6</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Medson Oliveira - Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Aprenda uma visão geral do JavaScript. Sua sintaxe, principais aplicações e as novidades da última atualização.</p>
+                 </div>
+               </li>
+               <li>
+                <span>19:00 - 20:00</span>
+                <div>
+                  <strong>Como eu não me tornei Programador</strong>
+                  <div class="label-type">
+                     <p>palestra</p>
+                  </div>
+                  <p class="instructor-content">Palestrante: Yuri "Fly" Uchiyama - CEO da empresa GamersClub</p>
+                  <p class="description-content">Conteúdo: São as suas conexões que te transformam. Conheça a trajetória de um dos fundadores da Gamers Club, uma das maiores empresas brasileiras de esportes eletrônicos.</p>
+                </div>
+              </li>
+              <li>
+                <span>20:10 - 20:50</span>
+                <div>
+                  <strong>Mercado de trabalho - Consultoria em TI</strong>
+                  <div class="label-type">
+                     <p>palestra</p>
+                  </div>
+                  <p class="instructor-content">Palestrante: Michele Alves de Oliveira - Sócia da Biz Process Consultoria</p>
+                  <p class="description-content">Conteúdo: Atuação de profissionais de TI na área de consultoria. Perfil, desafios e oportunidades</p>
+                </div>
+              </li>
+              <li>
+                <span>21:10 - 22:00</span>
+                <div>
+                  <strong>O mínimo que você precisa saber de JavaScript até 3 de Outubro</strong>
+                  <div class="label-type">
+                     <p>palestra</p>
+                  </div>
+                  <p class="instructor-content">Palestrante: Eduardo Aleixo - Desenvolvedor na empresa Transluscent Computing</p>
+                  <p class="description-content">Conteúdo: Para aqueles que, de alguma forma, interagem com JS, mas não se sentem confiantes. Serão apresentados algumas manhas de linguagem, expressões idiomáticas e um bocado de ES6 features</p>
+                </div>
+              </li>
+              <li>
+                <span>19:00 - 22:00</span>
+                <div>
+                  <strong>Introdução ao framework .NET (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Vitor Manfré e Natanael Lemos - Desenvolvedores na empresa Ventron</p>
+                  <p class="description-content">Conteúdo: No curso falaremos sobre o .NET Core versão multiplataforma do .NET Framework. Durante o curso, abordaremos os conceitos básicos da tecnologia e criaremos uma pequena WebAPI de exemplo.</p>
+                </div>
+              </li>
+              <li>
+                <span>19:00 - 22:00</span>
+                <div>
+                  <strong>Introdução a linguagem GO (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Felipe Siqueira Pinheiro e Felipe Augusto Trindade - Estagiário na IBM; Programador na GFT</p>
+                  <p class="description-content">Conteúdo: Introdução a linguagem de programação e a forma Go de pensar em código.</p>
+                </div>
+              </li>
+              <li>
+                  <span>19:00 - 22:00</span>
+                  <div>
+                    <strong>Introdução a Jogos com HTML5 & Javascript (Dia 2)</strong>
+                    <div class="label-type">
+                       <p>minicurso</p>
+                    </div>
+                    <p class="instructor-content">Instrutor: Matheus Luiz da Silva - Fatec Sorocaba</p>
+                    <p class="description-content">Conteúdo: Uma introdução ao desenvolvimento de jogos com HTML5 Canvas e Javascript, mais uma pequena introdução à Spritesheet Animation e Pixel Art.</p>
+                  </div>
+              </li>
+              <li>
+                <span>19:00 - 22:00</span>
+                <div>
+                  <strong>Desenvolvendo com IONIC (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Vinicius Puente e Medson Oliveira</p>
+                  <p class="description-content">Conteúdo: O curso abordará desenvolvimento multiplataforma para dispositivos móveis.</p>
+                </div>
+              </li>
+              <li>
+                <span>19:00 - 22:00</span>
+                <div>
+                  <strong>Building applications with React and Redux (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Vitor Talaia e Felipe Soares - Desenvolvedores na Code Miner 42.</p>
+                  <p class="description-content">Conteúdo: Nesse minicurso, iremos criar uma aplicação básica usando React e depois iremos refatorá-la aplicando os conceitos do Redux. Conhecimento necessário: JavaScript (iremos utilizar ES6); Alguns conceitos básicos de programação funcional (funções puras, high order functions, etc.)</p>
+                </div>
+              </li>
+             </ul>
+           </div>
+         </div>
+
+         <div id="qua" class="schedule">
+           <div class="timeline-container">
+             <ul class="timeline-item">
+              <li>
+                <span>07:40 - 12:30</span>
+                <div>
+                  <strong>Appium: Automatize seus Testes Mobile com Rucumber e Ruby (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutora: Mariana Elisa Moisés - MBA em Gerenciamento de Projetos</p>
+                  <p class="description-content">Conteúdo: minicurso sobre o framework Appium, muito utilizado para automação de testes mobile. Vou apresentar a evolução das skills do Testador alinhada as novas demandas de mercado, além de um exemplo prático com simulação tanto com emulador quanto celular (físico).</p>
+                </div>
+              </li>
+              <li>
+                <span>07:40 - 12:30</span>
+                <div>
+                  <strong>Conhecendo o XML no Android Studio (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutor: Alex Barros Silva - Fatec Sorocaba</p>
+                  <p class="description-content">Conteúdo: No mini curso serão abordadas utilizaçoes do XML (Extended Markup Language) no Android Studio assim como sua sintaxe.</p>
+                </div>
+              </li>
+              <li>
+                <span>07:40 - 12:30</span>
+                <div>
+                  <strong>HTML & CSS (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutor: Felipe Inocencio - Fatec Sorocaba</p>
+                  <p class="description-content">Conteúdo: Junte-se a mim e ao Faustão para aprender a base de HTML e CSS.</p>
+                </div>
+              </li>
+              <li>
+                <span>07:40 - 12:30</span>
+                <div>
+                  <strong>Programação com Python (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutor: Fernando Miranda - Professor na Fatec Sorocaba</p>
+                  <p class="description-content">Conteúdo: Aprenda uma visão geral da linguagem de programação Python, sua sintaxe e aplicações.</p>
+                </div>
+              </li>
+              <li>
+                <span>07:40 - 12:30</span>
+                <div>
+                  <strong>Introdução a JavaScript ES6 (Dia 2)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutor: Medson Oliveira - Fatec Sorocaba</p>
+                  <p class="description-content">Conteúdo: Aprenda uma visão geral do JavaScript. Sua sintaxe, principais aplicações e as novidades da última atualização.</p>
+                </div>
+              </li>
+              <li>
+                <span>19:00 - 20:00</span>
+                <div>
+                  <strong>Introdução a desenvolvimento web com Rails e seus padrões</strong>
+                  <div class="label-type">
+                     <p>palestra</p>
+                  </div>
+                  <p class="instructor-content">Palestrante: Patrícia Luz Bastos - Desenvolvedora na empresa Codeminer42</p>
+                  <p class="description-content">Conteúdo: Você acha que desenvolvimento web é complicado? Pois não precisa ser. Nesta palestra iremos abordar o conceito da arquitetura MVC, entenderemos a arquitetura básica de uma aplicação com Ruby on Rails, veremos o quão fácil é criar algo funcional, e ainda algumas dicas para iniciantes.</p>
+                </div>
+              </li>
+              <li>
+                <span>20:10 - 20:50</span>
+                <div>
+                  <strong>Estou formado!! E agora??</strong>
+                  <div class="label-type">
+                     <p>palestra</p>
+                  </div>
+                  <p class="instructor-content">Palestrante: Fabio Cotrim - Fundador da DBA Brasil</p>
+                  <p class="description-content">Conteúdo: Nesta palestra, pretendo dar algumas dicas para os estudantes que, em breve, ingressarão no mercado corporativo, onde descobrirão que passar nas matérias do curso era tão fácil.</p>
+                </div>
+              </li>
+              <li>
+                <span>21:10 - 22:00</span>
+                <div>
+                  <strong>Carreira Front End</strong>
+                  <div class="label-type">
+                     <p>palestra</p>
+                  </div>
+                  <p class="instructor-content">Palestrante: Thaysa Mara Monteiro dos Santos - Desenvolvedora Front-End na IBM</p>
+                  <p class="description-content">Conteúdo: Começar na carreira de desenvolvimento web nunca é fácil, ao ingressar no mercado web é normal surgir dúvidas sobre qual linguagem estudar e por onde começar. Essa palestra traz para aqueles que queiram trabalhar com o desenvolvimento front end dicas de como começar para trilhar uma carreira.</p>
+                </div>
+              </li>
+              <li>
+                <span>19:00 - 22:00</span>
+                <div>
+                  <strong>Introdução ao framework .NET (Dia 3)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Vitor Manfré e Natanael Lemos - Desenvolvedores na empresa Ventron</p>
+                  <p class="description-content">Conteúdo: No curso falaremos sobre o .NET Core versão multiplataforma do .NET Framework. Durante o curso, abordaremos os conceitos básicos da tecnologia e criaremos uma pequena WebAPI de exemplo.</p>
+                </div>
+              </li>
+              <li>
+                <span>19:00 - 22:00</span>
+                <div>
+                  <strong>Introdução a linguagem GO (Dia 3)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Felipe Siqueira Pinheiro e Felipe Augusto Trindade - Estagiário na IBM; Programador na GFT</p>
+                  <p class="description-content">Conteúdo: Introdução a linguagem de programação e a forma Go de pensar em código.</p>
+                </div>
+              </li>
+              <li>
+                  <span>19:00 - 22:00</span>
+                  <div>
+                    <strong>Introdução a Jogos com HTML5 & Javascript (Dia 3)</strong>
+                    <div class="label-type">
+                       <p>minicurso</p>
+                    </div>
+                    <p class="instructor-content">Instrutor: Matheus Luiz da Silva - Fatec Sorocaba</p>
+                    <p class="description-content">Conteúdo: Uma introdução ao desenvolvimento de jogos com HTML5 Canvas e Javascript, mais uma pequena introdução à Spritesheet Animation e Pixel Art.</p>
+                  </div>
+              </li>
+              <li>
+                <span>19:00 - 22:00</span>
+                <div>
+                  <strong>Desenvolvendo com IONIC (Dia 3)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutores: Vinicius Puente e Medson Oliveira</p>
+                  <p class="description-content">Conteúdo: O curso abordará desenvolvimento multiplataforma para dispositivos móveis.</p>
+                </div>
+              </li>
+              <li>
+                <span>19:00 - 22:00</span>
+                <div>
+                  <strong>Building applications with React and Redux (Dia 3)</strong>
+                  <div class="label-type">
+                     <p>minicurso</p>
+                  </div>
+                  <p class="instructor-content">Instrutor: Vitor Talaia e Felipe Soares - Desenvolvedor na Code Miner 42.</p>
+                  <p class="description-content">Conteúdo: Nesse minicurso, iremos criar uma aplicação básica usando React e depois iremos refatorá-la aplicando os conceitos do Redux. Conhecimento necessário: JavaScript (iremos utilizar ES6); Alguns conceitos básicos de programação funcional (funções puras, high order functions, etc.)</p>
+                </div>
+              </li>
+             </ul>
+           </div>
+         </div>
+
+         <div id="qui" class="schedule">
+           <div class="timeline-container">
+             <ul class="timeline-item">
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Appium: Automatize seus Testes Mobile com Rucumber e Ruby (Dia 3)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutora: Mariana Elisa Moisés - MBA em Gerenciamento de Projetos</p>
+                   <p class="description-content">Conteúdo: minicurso sobre o framework Appium, muito utilizado para automação de testes mobile. Vou apresentar a evolução das skills do Testador alinhada as novas demandas de mercado, além de um exemplo prático com simulação tanto com emulador quanto celular (físico).</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Conhecendo o XML no Android Studio (Dia 3)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Alex Barros Silva - Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: No mini curso serão abordadas utilizaçoes do XML (Extended Markup Language) no Android Studio assim como sua sintaxe.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>HTML & CSS (Dia 3)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Felipe Inocencio - Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Junte-se a mim e ao Faustão para aprender a base de HTML e CSS.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Programação com Python (Dia 3)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Fernando Miranda - Professor na Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Aprenda uma visão geral da linguagem de programação Python, sua sintaxe e aplicações.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Introdução a JavaScript ES6 (Dia 3)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Medson Oliveira - Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Aprenda uma visão geral do JavaScript. Sua sintaxe, principais aplicações e as novidades da última atualização.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>19:10 - 19:50</span>
+                 <div>
+                   <strong>Como conhecer um pouco do seu usuário sem ser pesquisador</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p class="instructor-content">Palestrante: Bianca Brancaleone - Designer, Google Expert em UX, Sócia do Eu Compraria, organizadora do GDG e Women Techmakers de Sorocaba</p>
+                   <p class="description-content">Conteúdo: Como conhecer mais do seu usuário sem ser pesquisador</p>
+                 </div>
+               </li>
+               <li>
+                 <span>19:50 - 20:30</span>
+                 <div>
+                   <strong>Preguiça é a mãe da evolução - automatizando tarefas com NodeJS</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p class="instructor-content">Palestrante: Guilherme Serrano - GS Solutions</p>
+                   <p class="description-content">Conteúdo: Nesta talk vou apresentar alguns cases de automação (emissão de NFe, formulários, testes, redes sociais, e-mail) e também algumas ferramentas que podem auxiliar na automação de tarefas variadas para NodeJS.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>20:45 - 21:25</span>
+                 <div>
+                   <strong>13 reasons why to choose JavaScript</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p class="instructor-content">Palestrante: Eduardo Matos - Dev desde 2004, quando começou a trabalhar como professor e programador. Trabalhou em diversas empresas como R7.com, JWT, Medicinia, BankFacil e em projetos com Philips, Adidas, entre outras. Hoje é Tech Lead na GetNinjas, organizador do HTML-SP e admin da org do Frontend Brasil, no Github</p>
+                   <p class="description-content">Conteúdo: Nessa palestra vamos ver alguns motivos pra você escolher JavaScript como linguagem, baseando-se em algumas experiências reais</p>
+                 </div>
+               </li>
+               <li>
+                 <span>21:25 - 22:05</span>
+                 <div>
+                   <strong>Por que usar PHP?</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p class="instructor-content">Palestrante: Ramon Sanches -  Pai, nerd, podcaster, desenvolvedor PHP há 11 anos, apaixonado por web, novas tecnologias e padrões de desenvolvimento.</p>
+                   <p class="description-content">Conteúdo: Uma linguagem em sua curva ascendente, sendo cada vez mais utilizada em meios corporativos e grandes aplicações. Falaremos de suas key features até como anda o mercado nos dias de hoje.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>19:00 - 22:00</span>
+                 <div>
+                   <strong>Introdução ao framework .NET (Dia 4)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutores: Vitor Manfré e Natanael Lemos - Desenvolvedores na empresa Ventron</p>
+                   <p class="description-content">Conteúdo: No curso falaremos sobre o .NET Core versão multiplataforma do .NET Framework. Durante o curso, abordaremos os conceitos básicos da tecnologia e criaremos uma pequena WebAPI de exemplo.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>19:00 - 22:00</span>
+                 <div>
+                   <strong>Introdução a linguagem GO (Dia 4)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutores: Felipe Siqueira Pinheiro e Felipe Augusto Trindade - Estagiário na IBM; Programador na GFT</p>
+                   <p class="description-content">Conteúdo: Introdução a linguagem de programação e a forma Go de pensar em código.</p>
+                 </div>
+               </li>
+               <li>
+                  <span>19:00 - 22:00</span>
+                  <div>
+                    <strong>Introdução a Jogos com HTML5 & Javascript (Dia 4)</strong>
+                    <div class="label-type">
+                      <p>minicurso</p>
+                    </div>
+                    <p class="instructor-content">Instrutor: Matheus Luiz da Silva - Fatec Sorocaba</p>
+                    <p class="description-content">Conteúdo: Uma introdução ao desenvolvimento de jogos com HTML5 Canvas e Javascript, mais uma pequena introdução à Spritesheet Animation e Pixel Art.</p>
+                  </div>
+               </li>
+               <li>
+                 <span>19:00 - 22:00</span>
+                 <div>
+                   <strong>Desenvolvendo com IONIC (Dia 4)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutores: Vinicius Puente e Medson Oliveira</p>
+                   <p class="description-content">Conteúdo: O curso abordará desenvolvimento multiplataforma para dispositivos móveis.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>19:00 - 22:00</span>
+                 <div>
+                   <strong>Building applications with React and Redux (Dia 4)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutores: Vitor Talaia e Felipe Soares - Desenvolvedores na Codeminer 42.</p>
+                   <p class="description-content">Conteúdo: Nesse minicurso, iremos criar uma aplicação básica usando React e depois iremos refatorá-la aplicando os conceitos do Redux. Conhecimento necessário: JavaScript (iremos utilizar ES6); Alguns conceitos básicos de programação funcional (funções puras, high order functions, etc.)</p>
+                 </div>
+               </li>
+              </ul>
+            </div>
+          </div>
+
+         <div id="sex" class="schedule">
+           <div class="timeline-container">
+             <ul class="timeline-item">
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Appium: Automatize seus Testes Mobile com Rucumber e Ruby (Dia 4)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutora: Mariana Elisa Moisés - MBA em Gerenciamento de Projetos</p>
+                   <p class="description-content">Conteúdo: minicurso sobre o framework Appium, muito utilizado para automação de testes mobile. Vou apresentar a evolução das skills do Testador alinhada as novas demandas de mercado, além de um exemplo prático com simulação tanto com emulador quanto celular (físico).</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>HTML & CSS (Dia 4)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Felipe Inocencio - Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Junte-se a mim e ao Faustão para aprender a base de HTML e CSS.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Programação com Python (Dia 4)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Fernando Miranda - Professor na Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Aprenda uma visão geral da linguagem de programação Python, sua sintaxe e aplicações.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>Introdução a JavaScript ES6 (Dia 4)</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutor: Medson Oliveira - Fatec Sorocaba</p>
+                   <p class="description-content">Conteúdo: Aprenda uma visão geral do JavaScript. Sua sintaxe, principais aplicações e as novidades da última atualização.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>07:40 - 12:30</span>
+                 <div>
+                   <strong>O que é, para que serve e como fazer um chatbot cognitivo</strong>
+                   <div class="label-type">
+                      <p>minicurso</p>
+                   </div>
+                   <p class="instructor-content">Instrutora: Eduarda Gama, 18 anos, apaixonada por tecnologia e computação cognitiva, vai cursar ciência da computação ano que vem.Vencedora duas vezes no bluehack hortolândia 2017. Desenvolvedora, youtuber e designer por hobby.</p>
+                   <p class="description-content">Conteúdo: Vou ensinar a fazer um chatbot pelo Watson, um dos serviços do bluemix, ferramenta da ibm, e associa-lo à uma página no facebook. Nível de conhecimento necessário: zero.</p>
+                 </div>
+               </li>
+               <li>
+                 <span>19:00</span>
+                 <div>
+                   <strong>Palestras Relâmpago</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p>5 minutos para cada palestrante falar sobre suas experiências e compartilhar tudo o que puder antes que a buzina (é uma buzina de verdade!) toque. </p>
+                 </div>
+               </li>
+               <li>
+                 <span>20:00</span>
+                 <div>
+                   <strong>Fish Bowl</strong>
+                   <div class="label-type">
+                      <p>palestra</p>
+                   </div>
+                   <p> Temas tão polêmicos quanto mamilos entram em discussão no Fish Bowl!  </p>
+                 </div>
+               </li>
+               <li>
+                 <span>21:00</span>
+                 <div>
+                   <strong>After Party</strong>
+                   <div class="label-type">
+                      <p>Networking</p>
+                   </div>
+                  <p> O local do After será decidido na hora, mas vale muito a pena conhecer a galera com quem tanto aprendemos e fazer networking! </p>
+               </li>
+             </ul>
+           </div>
+         </div>
+
+         <div id="sab" class="schedule">
+           <div class="timeline-container">
              <div class="timeline-container">
-               <h3>Segunda - 00/00</h3>
                <ul class="timeline-item">
                  <li>
-                   <span>09:00</span>
+                   <span>8:00 - 9:00</span>
                    <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
+                     <strong>Curso de Git</strong>
+                     <div class="label-type">
+                        <p>minicurso</p>
+                     </div>
+                     <p class="instructor-content">Instrutoras: Amanda Vilela e Beatriz Delmont</p>
+                     <p class="description-content">Conteúdo: minicurso para aprender as funcionalidades básicas do Git e estar preparado para o Comittão!</p>
                    </div>
                  </li>
                  <li>
-                   <span>09:00</span>
+                   <span>8:00 - 9:00</span>
                    <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
+                     <strong>Coding Dojo em Python para Iniciantes</strong>
+                     <div class="label-type">
+                        <p>coding dojo</p>
+                     </div>
+                     <p class="instructor-content">Instrutor: Ricardo Hiroyuki - Estagiário em Desenvolvimento Web na CodeMiner42</p>
+                     <p class="description-content">Conteúdo: Participantes revezam como platéia, piloto e co-piloto no computador na solução do problema proposto utilizando testes e baby steps. O Dojo será voltado para iniciantes de programação.</p>
                    </div>
                  </li>
                  <li>
-                   <span>09:00</span>
+                   <span>9:00 - 12:00</span>
                    <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
-                   </div>
-                 </li>
-                 <li>
-                   <span>09:00</span>
-                   <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
-                   </div>
-                 </li>
-                 <li>
-                   <span>09:00</span>
-                   <div>
-                     <strong>Título da palestra</strong>
-                     <p>Nome do palestrante</p>
+                     <strong>Comittao</strong>
+                     <div class="label-type">
+                        <p>comittao</p>
+                     </div>
+                     <p class="instructor-content">Instrutores: Amanda Vilela e Beatriz Delmont</p>
+                     <p class="description-content">Conteúdo: Projetos open-source estão aguardando para serem resolvidos. Aqui serão mostrados várias opções para os participantes se engajarem com a comunidade, então: Comitta aê!</p>
                    </div>
                  </li>
                </ul>
+              </div>
              </div>
            </div>
-           <div id="cronoADS" class="none ads">
-               <h3>Titulo1</h3>
-               <h4>some lorem</h4>
-           </div>
-           <div id="cronoFAB" class="none fab">
-               <h3>Titulo2</h3>
-               <h4>more lorem</h4>
-           </div>
-           <div id="cronoSIS" class="none sis">
-               <h3>Titulo3</h3>
-               <h4>wait! more lorem</h4>
-           </div>
-       </section
+         </div>
+      </section>
+
+      <section class="faq container">
+        <h2>Perguntas frequentes</h2>
+        <ul>
+          <li>
+            <input type="checkbox" checked>
+
+            <h3>Como funcionam as inscrições?</h3>
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <p>
+               As inscrições são tanto para os minicursos quanto para as palestras e vai ser por ordem de chegada.
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+
+            <h3>Posso me inscrever em mais de um minicurso?</h3>
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <p>
+              Sim, desde que os horários não choquem.
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+
+            <h3>Posso levar meu Notebook?</h3>
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <p>
+              Pode, mas não garantimos que o ambiente do curso funcione em seu notebook. Estamos preparando todo o ambiente para cada minicurso em nossos laboratórios, e, caso você leve seu notebook, saiba que é por sua conta e risco.
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+
+            <h3>Vou ganhar certificado?</h3>
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <p>
+              Sim, desde que você assine a lista de presença que será distribuída durante o minicurso/palestra!
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+
+            <h3>Estou inscrito no curso de XML, sexta tenho acesso ao curso de chatbots?</h3>
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <p>
+              Sim! Como esse minicurso acaba antes do de Chatbots, você pode participar!
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked>
+
+            <h3>Preciso pagar para entrar?</h3>
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <p>
+              Não! Entrada totalmente grátis ;)
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="support">
+        <div class="realizacao">
+          <h2>Realização</h2>
+          <ul>
+            <li>
+              <img class="fatec" src="img/fatec-logo.png" alt="Logo da Fatec" />
+            </li>
+            <li>
+              <img class="cps" src="img/cps-logo.png" alt="Logo do Centro Paula Souza"/>
+            </li>
+            <li>
+              <img class="governo" src="img/governosp-logo.png" alt="Logo do Governo do estado de São Paulo"/>
+            </li>
+          </ul>
+        </div>
+        <div class="apoio">
+          <h2><strong>Apoio</strong></h2>
+          <ul>
+            <li>
+              <img src="img/CasaDoCodigo.png" alt="Logo da Casa do código"/>
+            </li>
+
+            <li>
+              <img src="img/CCBEU.png" alt="Logo do centro cultural brasil eua"/>
+            </li>
+
+            <li>
+              <img src="img/unicid.jpg" alt="Logo da Unicid"/>
+            </li>
+
+            <li>
+              <img src="img/eucompraria.png" alt="Logo da Eucompraria"/>
+            </li>
+
+            <li>
+              <img src="img/tegra.png" alt="Logo da Tegra"/>
+            </li>
+
+            <li>
+              <img src="img/codeminer-logo.png" alt="Logo da Codeminer42"/>
+            </li>
+
+            <li>
+              <img src="img/logo-zofi.png" alt="Logo da Zofi"/>
+            </li>
+
+            <li>
+              <img src="img/Logo_Cnu.png" alt="Logo da Connectuse"/>
+            </li>
+
+            <li>
+              <img src="img/algoramaLogo.png" alt="Logo da Algorama"/>
+            </li>
+
+            <li>
+              <img src="img/logo_lab1.jpg" alt="Logo da LabOne"/>
+            </li>
+
+            <li>
+              <img src="img/logo_eduzz.png" alt="Logo da Eduzz"/>
+            </li>
+
+            <li>
+              <img src="img/mocha-studio.png" alt="Logo da Mocha Studio"/>
+            </li>
+
+            <li>
+              <img src="img/larissa-logo.png" alt="Logo do Ateliê Larissa Beatriz"/>
+            </li>
+
+            <li>
+              <img src="img/devdive-logo.png" alt="Logo da DevDive"/>
+            </li>
+
+            <li>
+              <img src="img/pingodemel.png" alt="Logo da Pingo de Mel"/>
+            </li>
+
+            <li>
+              <img src="img/allin-logo.png" alt="Logo da All In"/>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="staff">
+        <h2>Organização</h2>
+        <div class="carousel" data-flickity='{ "pageDots": false,"wrapAround": true}'>
+            <div class="carousel-cell"/>
+              <img src="img/felipe-richter.jpg" alt="Foto de Felipe Richter"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/caique-mitsuoka.jpg" alt="Foto de Caique Mitsuoka"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/felipe-soares.jpeg" alt="Foto de Felipe Soares"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/elet.jpeg" alt="Foto de Élet"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/matheus.jpg" alt="Foto de Matheus"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/beatriz.jpeg" alt="Foto de Beatriz"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/jullia.jpg" alt="Foto de Jullia"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/vinicius.jpeg" alt="Foto de Vinicius">
+            </div>
+            <div class="carousel-cell">
+              <img src="img/felipe-bernardes.jpg" alt="Foto de Felipe Bernardes"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/amanda.jpg" alt="Foto de Amanda"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/jean.jpg" alt="Foto de Jean"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/tiago.jpg" alt="Foto de Tiago"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/allan.jpeg" alt="Foto de Allan"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/alex.jpeg" alt="Foto de Alex"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/daniel.jpg" alt="Foto de Daniel"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/barbara.jpeg" alt="Foto de Barbara"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/airton.jpeg" alt="Foto de Airton"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/andressa.jpeg" alt="Foto de Andressa"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/emerson.jpeg" alt="Foto de Emerson"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/medson.jpg" alt="Foto de Medson"/>
+            </div>
+            <div class="carousel-cell">
+              <img src="img/luciano.jpg" alt="Foto de Luciano"/>
+            </div>
+          </div>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+      </section>
+
+      <footer>
+        <p>
+          <a href="https://github.com/FatecSorocaba/" target="_blank"><span class="fa fa-creative-commons" aria-hidden="true" rel="noopener noreferrer"></span> GitHub Fatec Sorocaba</a>
+        </p>
+
+        <p> semanadetecnologiafatecso@gmail.com </p>
+
+        <p>
+          <a href="http://fatecsorocaba.edu.br/" target="_blank" rel="noopener noreferrer">Fatec Sorocaba - site oficial</a>
+        </p>
+      </footer>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-105731425-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+      <script type="text/javascript" src="js/main.min.js"></script>
   </body>
-  <script>
-        function openCourse(cityName) {
-            var i, x = document.getElementsByClassName("tab");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            document.getElementById(cityName).style.display = "calendar-body-style";
-        }
-  </script>
 </html>
