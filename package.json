@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/felipebernardes/site-setec-2016#readme",
   "devDependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.27.10",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
